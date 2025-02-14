@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anthony Zoss</title>
+
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+
+
+</head>
+
+<body>
+<!-- LANDING PAGE -->
+    <div class="d-flex flex-column vh-100 w-100 dark-bg ">
+    <!-- Navigation-->
+    <nav class="navbar navbar-dark navbar-expand-sm py-sm-3 px-sm-5 pt-4 pb-3 px-3">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="../index.html"><img src="../img/Anthony_Zoss.svg" alt="Anthony Zoss's Logo"></a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item pe-sm-3"><a class="nav-link" href="../index.html">HOME</a></li>
+                    <li class="nav-item dropdown pe-sm-3 position-relative">
+                        <a class="nav-link dropdown-toggle" href="#" id="workDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            WORK
+                        </a>
+                        <ul class="dropdown-menu position-absolute mt-0" aria-labelledby="workDropdown" style="top: 100%; left: 0;">
+                            <li><a class="nav-link" href="../projects/bytementor.html">ByteMentor</a></li>
+                            <li><a class="nav-link" href="#">PacMan Battle</a></li>
+                            <li><a class="nav-link" href="../projects/livique.html">Livique</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../about.html">ABOUT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <!-- Visuals -->
+        <div class="d-flex flex-column align-items-center flex-grow-1 p-sm-0 justify-content-sm-center pt-5">
+            <h1 class="fly-in-left">PacMan Battle</h1>
+            <img src="../img/pacman/pacman-landing.png" alt="Three Screens showing the PacMan-Battle Website" class="landing-img-pacman">
+        </div>
+
+        <!-- BOTTOM SECTION -->
+        <div class="start-0 end-0 bottom-0 d-flex align-items-center justify-content-between pb-2 px-3 py-sm-0 px-sm-5">
+            <div></div><!-- Placeholder -->
+            <!-- Icons -->
+            <div>
+                <div class="text-sm mb-2 text-center light-gray-font">contact me</div>
+                <div class="d-flex justify-content-center mb-sm-4">    
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/anthonyzoss/" target="_blank" class="icon-circle linkedin"><i class="bi bi-linkedin"></i></a>
+                    <!-- Github -->
+                    <a href="https://github.com/AnthonyxHD?tab=repositories" target="_blank" class="icon-circle github"><i class="bi bi-github"></i></a>
+                    <!-- E-Mail -->
+                    <a href="mailto:anthonyzoss97@gmail.com" class="icon-circle email"><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accent mb-5"></div>
+
+
+    <script src="../script.js"></script>
+
+<!-- OVERVIEW -->
+    <div class="sticky-container">
+        <!-- Title -->
+        <div class="sticky-top dark-bg" stlye="z-index: 9999;">
+                <h2 class="py-3">OVERVIEW</h2>
+        </div>
+        <!-- Content -->
+        <div class="container py-sm-5 py-4 g-0">
+            <div class="row highlight g-0">
+                <div class="col-12 fixed-height">
+                    <img src="../img/Pac-Man-Battle_Thumbnail.png" alt="PacMan Battle Thumbnail" class="highlight-full-img">
+                </div>
+                <div class="col-12 highlight-text light-gray-bg">
+                    <p>
+                        The Problem<br>
+                        Traditional PacMan is a single-player game, limiting competitive and cooperative gameplay opportunities.
+                    </p>
+                    <p>
+                        The Goal<br>
+                        Expand PacMan into a two-playeer experience while maintaining the classic game's feel and mechanics.
+                    </p>
+                    <p>
+                        My Role<br>
+                        Game design and development, from ideation to prototyping and final implementation, in a group of four.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+<!-- UNDERSTANDING THE USER -->
+    <div class="sticky-container">
+        <!-- Title -->
+        <div class="sticky-top dark-bg" stlye="z-index: 9999;">
+            <h2 class="py-3">UNDERSTANDING THE USER</h2>          
+        </div>
+        <!-- Content -->
+        <div class="container py-sm-5 py-3 g-0">
+            <div class="row">
+                <div class="col-12 highlight-text">
+                    <div class="light-gray-font">
+                        <p>
+                            To ensure PacMan Battle provided an engaging and competitive multiplayer experiece, we conducted
+                            a competitive audit to learn from existing project what already works and what doesn't. Our goal
+                            was to convert the iconic game into a multiplayer format while maintaining the retro aesthetic
+                            and game mechanics.
+                        </p>
+
+                        <h3>Limitations</h3>
+                        <p>
+                            We explored Co-Op variations, but ultimately focused on turn-base competition due to technical
+                            constraints. A real-time online game demands a high data exchange frequency, which the server of
+                            our university could not deliver. This limitation left us with more competitors, which didn't
+                            correscond fully to the results of our competition audit.
+                        </p>
+
+                        <h3>Persona</h3>
+                        <p>
+                            Since there was already a significant amount of research on the target audience of PacMan we
+                            conducted a secondary analysis on the potential users. With the results we developed an ad-hoc
+                            persona to better understand our target group's needs and frustrations.
+                        </p>
+
+                        <img src="../img/pacman/Persona_Lukas.png" alt="Persona Lukas displayed with his characteristics" class="pb-3 content-img">
+
+                        
+                        <h3>Problem Statement</h3>
+                    </div>
+                    <div class="container pt-2 g-0">
+                        <div class="row highlight g-0">
+                            <div class="col-12 highlight-text light-gray-bg">
+                                <p>
+                                    Lukas <u>is</u> retro game enthusiast <u>who needs</u> an engaging multiplayer experience
+                                    of the iconic game PacMan <u>because</u> it allows him to relive the game socially with
+                                    his friends, enhancing nostalgia and fun.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STARTING THE DESIGN -->
+    <div class="sticky-container">
+        <!-- Tible -->
+        <div class="sticky-top dark-bg" stlye="z-index: 9999;">
+                <h2 class="py-3">REFINING THE DESIGN</h2>
+        </div>
+        <!-- Method 1: Sketching -->
+        <div class="container pt-5 g-0">
+            <div class="row highlight fixed-height-bm g-0 light-gray-bg">
+                <div class="col-12 col-sm-12 col-xl-5">
+                    <div id="carouselSketching" class="carousel slide h-100" data-bs-ride="carousel">
+                        <!-- Carousel Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#carouselSketching" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#carouselSketching" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#carouselSketching" data-bs-slide-to="2"></li>
+                            <li data-bs-target="#carouselSketching" data-bs-slide-to="3"></li>
+                            <li data-bs-target="#carouselSketching" data-bs-slide-to="4"></li>
+                        </ol>
+
+                        <!-- Carousel Images -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="../img/pacman/m1-sketching.png" alt="Sketch 1 of PacMan Battle">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="../img/pacman/m1-sketching2.png" alt="Sketch 2 of PacMan Battle">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="../img/pacman/m1-sketching3.png" alt="Sketch 3 of PacMan Battle">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="../img/pacman/m1-sketching4.png" alt="Sketch 4 of PacMan Battle">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="../img/pacman/m1-sketching5.png" alt="Sketch 5 of PacMan Battle">
+                            </div>
+                        </div>
+
+                        <!-- Carousel Controls -->
+                        <a class="carousel-control-prev" href="#carouselSketching" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselSketching" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-xl-7">
+                    <div class="highlight-text">
+                        <h3>Sketching</h3>
+                                <p>
+                                    To explore different design concepts, we visualized our website with digital sketches.
+                                    Ouyr early sketches allowed us to quickly iterate on design choises before moving
+                                    into digital prototyping, ensuring that our approach remained true to the iconic
+                                    PacMan style.
+                                </p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="light-gray-font pt-5">Visual Elements</h3>
+
+            <div class="d-block d-flex justify-content-center align-items-center">
+                    <div class="col-6">
+                        <img src="../img/pacman/colours-pacman.png" alt="Colour Palett PacMan Battle" class="content-img">                    
+                    </div>
+                    <div class="col-6 d-flex align-items-center justify-content-center">
+                        <img src="../img/pacman/font-pacman.png" alt="Font PacMan Battle" class="content-img">
+                    </div>
+
+                </div>
+        </div>
+
+        
+        <!-- Method 2: Usability Study -->
+        <div class="container pt-5 g-0">
+            <div class="row highlight fixed-height-bm g-0 light-gray-bg">
+                <div class="col-12 col-sm-12 col-xl-5 d-flex align-items-center">
+                    <img src="../img/pacman/m2-usability-test.png" alt="A screen showing the Homepage of PacMan Battle" class="box-img-2">
+                </div>
+                <div class="col-sm-12 col-xl-7 highlight-text">    
+                    <h3>Usability Study</h3>
+
+                    <p>
+                        Once our initial game layout was in place, we conducted usability testing to validate
+                        our design decisions and the workability of the code.
+                    </p>
+                    <p>
+                        The usability study involved a live demonstration of the prototype, presented to a group of 11 
+                        participants.The goal was to observe how users interacted with the game under real conditions, 
+                        allowing them to play freely and explore the mechanics at their own pace. 
+                    </p>
+                </div>
+            </div>
+            <div class="row highlight-text light-gray-font mt-3">
+                <h3>Improvements</h3>
+                <p>
+                    <u>Tunnel Mechanic</u><br>
+                    Removed game tunnel mechanic due to bugs where characters would escape the game area
+                </p>
+                <p>
+                    <u>Scoring System</u><br>
+                    Points for ghosts, pellets, and fruits were adapted for a fairer competitive game
+                </p>
+                <p>
+                    <u>Local Storage</u>
+                    Implementation of highscore saving locally for competitive ranking
+                </p>
+                <p>
+                    <u>Interactive Quiz</u>
+                    Since the online multiplayer mode wasn't feasible, an additional PacMan quiz was introduced to 
+                    maintain engagement
+                </p>
+            </div>
+                
+            </div>
+        </div>
+        
+ <!-- REFINING THE DESING -->
+    <div class="sticky-container">
+        <!-- Title -->
+        <div class="sticky-top dark-bg" stlye="z-index: 9999;">
+            <h2 class="py-3">IMPLEMENTATION</h2>          
+        </div>
+        <!-- Content -->
+        <div class="container py-sm-5 py-3 g-0 highlight-text">
+            <div class="row light-gray-font">
+                <div class="text-center pb-3">
+                    <h3>Gameplay</h3>
+                </div>
+                    <div class="col-12 d-flex d-block justify-content-center align-items-center">
+                        
+                        <div id="carouselPacman" class="carousel slide h-100" data-bs-ride="carousel">
+                            <!-- Carousel Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#carouselPacman" data-bs-slide-to="0" class="active"></li>
+                                <li data-bs-target="#carouselPacman" data-bs-slide-to="1"></li>
+                                <li data-bs-target="#carouselPacman" data-bs-slide-to="2"></li>
+                                <li data-bs-target="#carouselPacman" data-bs-slide-to="3"></li>
+                            </ol>
+
+                            <!-- Carousel Images -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="../img/pacman/pacman-home.jpeg" alt="Home-Screen PacMan Battle">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="../img/pacman/pacman-starting-game.jpeg" alt="Starting-Game-Screen PacMan Battle">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="../img/pacman/pacman-enter-name.jpeg" alt="Name-Selection-Screen PacMan Battle">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="../img/pacman/pacman-gameplay.jpeg" alt="Gameplay-Screen PacMan Battle">
+                                </div>
+                            </div>
+
+                            <!-- Carousel Controls -->
+                            <a class="carousel-control-prev" href="#carouselPacman" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselPacman" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="text-center py-3">
+                        <h3>Quiz</h3>
+                    </div>
+                        <div class="col-12 d-flex d-block justify-content-center align-items-center">
+                            
+                            <div id="carouselQuiz" class="carousel slide h-100" data-bs-ride="carousel">
+                                <!-- Carousel Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-bs-target="#carouselQuiz" data-bs-slide-to="0" class="active"></li>
+                                    <li data-bs-target="#carouselQuiz" data-bs-slide-to="1"></li>
+                                    <li data-bs-target="#carouselQuiz" data-bs-slide-to="2"></li>
+                                </ol>
+    
+                                <!-- Carousel Images -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="../img/pacman/pacman-quiz.jpeg" alt="Starting-Quiz-Screen PacMan Battle">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="../img/pacman/pacman-quiz-questions.jpeg" alt="Quiz-Question-Screen PacMan Battle">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="../img/pacman/pacman-quiz-dragdrop.jpeg" alt="Quiz-DragAndDrop-Screen PacMan Battle">
+                                    </div>
+
+                                </div>
+    
+                                <!-- Carousel Controls -->
+                                <a class="carousel-control-prev" href="#carouselQuiz" role="button" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselQuiz" role="button" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </a>
+                            </div>
+                        </div>
+
+
+                <div class="pt-5">
+                    <h3>Board and Map Generation</h3>
+                </div>
+                
+                <p>
+                    The game board is a grid-based system, where each tile represents different objects in an
+                    array.
+                </p>
+                <p>Map example:</p>
+                <div clas="col-12">
+                    <pre>
+                        <code class="language-javascript">
+    const map = [
+        ['1', 'a', 'a', '2'],  // Walls = a / Corners = Numbers
+        ['b', '.', '.', 'b'],  // Pellets = . / Vertical Walls = b
+        ['b', 'p', 'p', 'b'],  // Power-ups = p
+        ['4', 'a', 'a', '3']  
+    ];</code>
+                    </pre>
+                </div>
+
+                <p>Dynamic generation:</p>
+
+                <div clas="col-12">
+                    <pre>
+                        <code class="language-javascript">
+    function generateMap () {
+        map.forEach((row, i) => { 
+            row.forEach((symbol, j) => { 
+                if (symbol === '.') {
+                    pellets.push(new Pellet({ position: { x: j * 32, y: i * 32 }}));
+                } else if (symbol === 'p') {
+                    powerUps.push(new PowerUp({ position: { x: j * 32, y: i * 32 }}));
+                } else {
+                    boundaries.push(new Boundary({ position: { x: j * 32, y: i * 32 }}));
+                }
+            });
+        });
+    }</code>
+                    </pre>
+                </div>
+
+                <h3>Player and Movement Controls</h3>
+                <p>PacMan's movement follows a collision-based system. To avoid conflicts with webpage
+                    functions, only "W, A, S, D" keys were assigned for player controls.
+                </p>
+                <div clas="col-12">
+                    <pre>
+                        <code class="language-javascript">
+    document.addEventListener("keydown", (event) => {
+        switch (event.key) {
+            case 'ArrowUp': player.velocity.y = -3; break;
+            case 'ArrowDown': player.velocity.y = 3; break;
+            case 'ArrowLeft': player.velocity.x = -3; break;
+            case 'ArrowRight': player.velocity.x = 3; break;
+        }
+    });</code>
+                    </pre>
+                </div>
+
+                <p>Collision Detection:</p>
+
+                <div clas="col-12">
+                    <pre>
+                        <code class="language-javascript">
+    boundaries.forEach((boundary) => {
+        if (circleCollidesWithRectangle({ circle: player, rectangle: boundary })) {
+            player.velocity.x = 0;
+            player.velocity.y = 0;
+        }
+    });</code>
+                    </pre>
+                </div>
+
+                <h3>Ghost AI and Pathfinding</h3>
+                <p>The ghosts radomly navigate while avoiding wall. At the same time the AI adjusts
+                    movement based on possible paths:
+                </p>
+
+                <div clas="col-12">
+                    <pre>
+                        <code class="language-javascript">
+    const possibleDirections = ['up', 'down', 'left', 'right'];
+    const randomDirection = possibleDirections[Math.floor(Math.random() * possibleDirections.length)];
+    switch (randomDirection) {
+        case 'up': ghost.velocity.y = -3; break;
+        case 'down': ghost.velocity.y = 3; break;
+        case 'left': ghost.velocity.x = -3; break;
+        case 'right': ghost.velocity.x = 3; break;
+    }</code>
+                    </pre>
+                </div>
+
+                <p>Ghost change behavior when PacMan eats a powerup:</p>
+
+                <div clas="col-12">
+                    <pre>
+                        <code class="language-javascript">
+    ghosts.forEach(ghost => {
+        ghost.scared = true;
+        setTimeout(() => ghost.scared = false, 5000);
+    });</code>
+                    </pre>
+                </div>
+
+                <h3>Multiplayer Turn System</h3>
+                <p>Each player gets 20s per turn:</p>
+
+                <div clas="col-12">
+                    <pre>
+                        <code class="language-javascript">
+    var timeLeft = 20;
+    var timerId = setInterval(() => {
+        timeLeft--;
+        if (timeLeft === 0) {
+            clearTimeout(timerId);
+            switchTurn();
+        }
+    }, 1000);</code>
+                    </pre>
+                </div>
+
+                <p>When the turn ends, the next player starts:</p>
+
+                <div clas="col-12">
+                    <pre>
+                        <code class="language-javascript">
+    function switchTurn() {
+        currentPlayer = currentPlayer === 1 ? 2 : 1;
+        resetPlayerPosition();
+    }</code>
+                    </pre>
+                </div>
+
+                <h3>Scoring System and Power-Ups</h3>
+                <p>Players earn points by eating pellets and ghosts (when scared):</p>
+
+                <div clas="col-12">
+                    <pre>
+                        <code class="language-javascript">
+    if (circleCollidesWithRectangle({ circle: player, rectangle: pellet })) {
+        pellets.splice(i, 1); // Remove pellet
+        score += 10; // Increase score
+    } </code>
+                    </pre>
+                </div>
+
+                <p>Eating a Power-Up lets PacMan eat ghosts</p>
+
+                <div clas="col-12">
+                    <pre>
+                        <code class="language-javascript">
+    if (circleCollidesWithRectangle({ circle: player, rectangle: powerUp })) {
+        powerUps.splice(i, 1);
+        ghosts.forEach(ghost => ghost.scared = true);
+    }</code>
+                    </pre>
+                </div>
+
+            </div>
+        </div>
+    </div>       
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+
+<div class="light-gray-bg mt-5 pb-5 footer-image">
+    <div class="container pt-5 text-center">
+        <h3>Let's work together!</h3>
+        <p class="pt-3">
+            For any inquiries, collaborations, or just to say hello. <br> 
+            I'd love to hear from you!
+        </p>
+        <p class="pt-1">Reach out and let's connect.</p>
+        <a href="mailto:anthonyzoss97@gmail.com" class="text-decoration-none mail black-font">anthonyzoss97@gmail.com</a>
+    </div>
+</div>
+<!-- IMPRESSUM -->
+    <div class="text-white pt-3 pb-3">
+        <div class="container text-center text-sm">
+            © 2025 Anthony Zoss. All rights reserved.
+        </div>
+    </div>
+
+<!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

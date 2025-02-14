@@ -1,0 +1,580 @@
+/* =================================== */
+/* =====         GLOBAL          ===== */
+/* =================================== */
+html, body {
+/* Use of whole viewport */
+    height: 100%;
+    width: 100%;
+    min-width: 100vw;
+/* Remove standard browser m/p*/
+    margin: 0;
+    padding: 0;
+/* Prevents horizontal scrolling */
+    overflow-x: hidden;
+    
+/* Visuals */
+    font-family: 'Nacelle', sans-serif;
+    font-size: clamp(18px, 24px, 32px); /* (min, preffered, max) */
+    background-color: #171717;
+}
+    @media (max-width: 600px) {
+        html, body {
+            font-size: 18px; /* Fixed size on small screens */
+        }
+    }
+
+/* =================================== */
+/* =====        TYPOGRAPHY       ===== */
+/* =================================== */
+/* ----- FONTS ----- */
+@font-face {
+    font-family: 'Nacelle';
+    src: url("fonts/Nacelle-Regular.ttf");
+    font-weight: 700; /* Bold */
+    font-style: normal;
+    font-display: swap; /* Makes text visible immediately (no loading) */
+} 
+@font-face {
+    font-family: 'Mattone 150';
+    src: url("fonts/Mattone-150.woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap; /* Makes text visible immediately (no loading) */
+} 
+
+/* ----- HEADINGS ----- */
+h1 {
+/* Visuals */
+    font-family: 'Mattone 150', sans-serif;
+    font-size: 6.3vw; /* Responsive */
+    letter-spacing: -0.07vw;
+    line-height: 1.1;
+    margin: -0.5vw;
+    text-align: center;
+/* Color */
+    color: #FFFFFF;
+}
+
+h2 {
+/* Visuals */
+    font-family: 'Mattone 150', sans-serif;
+    font-size: clamp(20px, 5vw, 60px); /* (min, preffered, max) */
+    text-align: center;
+    opacity: 0; /* Oppacity for Animation */
+/* Colour */
+    color: #FFFFFF;
+}
+    @media (max-width: 600px) {
+        h2 {
+            font-size: 24px; /* Fixed size on small screens */
+        }
+    }
+    
+h3 {
+    font-family: 'Mattone 150', sans-serif;
+    font-size: clamp(18px, 5vw, 40px); /* (min, preffered, max) */
+}
+    @media (max-width: 600px) {
+        h3 {
+            font-size: 24px; /* Fixed size on small screens */
+        }
+    }
+
+/* ----- DETAILS ----- */
+.text-sm, .mail {
+    font-size: clamp(16px, 19px, 19px); /* (min, preffered, max) */
+    text-decoration: none;}
+    
+    .mail:hover {
+        color: #c71610;
+    }
+
+
+
+/* =================================== */
+/* =====         COLOURS         ===== */
+/* =================================== */
+/* ----- FONTS ----- */
+.black-font {color: #171717;}
+.light-gray-font {color: #d7d2d0}
+
+/* ----- BACKGROUNDS ----- */
+.dark-bg {background-color: #171717;}
+.gray-bg {background-color: #525251;}
+.light-gray-bg {background-color: #d7d2d0;}
+
+.accent {
+    background-color: #c71610;
+    height: 50px;}
+
+/* =================================== */
+/* =====        NAVIGATION       ===== */
+/* =================================== */
+.navbar {
+    background-color: #05050490;
+}
+
+.navbar-brand img {
+    height: 19px;}
+    @media (max-width: 576px) { /* Responsive */
+        .navbar-brand img {
+            height: 14px; 
+        }
+    }
+
+.nav-link {
+    font-size: clamp(14px, 19px, 19px); /* Responsive */
+    color: #d7d2d0 !important;}
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {
+    color: #FD4C2A !important;
+}
+
+/* =================================== */
+/* =====       LANDING PAGE      ===== */
+/* =================================== */
+.landing-img-home,
+.landing-img-bytementor,
+.landing-img-pacman,
+.landing-img-about { /* Ease animations */
+    animation:  floatUpDown 6s ease-in-out infinite 3s, /* Starting Animation */ 
+                slideUp 3s ease-out; /* Constant Animation*/   
+}
+
+.landing-img-home {
+    width: 19%;
+    margin-top: -3vw;}
+    @media (max-width: 576px) { /* Responsive*/
+        .landing-img-home {
+            width: 50%;
+            margin-top: 25vw;
+        }
+    }
+.landing-img-bytementor {
+    width: 40%;
+    margin-top: -4vw;}
+    @media (max-width: 576px) { /* Responsive*/
+        .landing-img-bytementor {
+            width: 90%;
+            margin-top: 25vw;
+        }
+    }
+
+.landing-img-pacman {
+    width: 80%;
+    margin-top: -2.5vw;}
+    @media (max-width: 576px) { /* Responsive*/
+        .landing-img-pacman {
+            width: 90%;
+            margin-top: 50%;
+        }
+    }
+
+.landing-img-about {
+    width: 20%;
+    margin-top: -2.5vw;}
+    @media (max-width: 576px) { /* Responsive*/
+        .landing-img-about {
+            width: 70%;
+            margin-top: 25vw;
+        }
+    } 
+
+/* ============================== */
+/* =====     HIGHLIGHTS     ===== */
+/* ============================== */
+.highlight {
+    border-radius: 20px; /* Roundness of Corners */
+    overflow: hidden; /* Ensures content stays within rounded corners */
+    padding: 0;
+}
+
+.highlight-full-img { /* IMG fills up whole .col */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures content fills until rounded corners */
+    display: block;
+}
+
+.highlight-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 30px;
+}
+    @media (max-width: 768px) { /* Responsive */
+        .highlight-text {
+            padding: 15px 30px 30px 30px;
+        }
+    }
+
+.highlight-keyword {
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 15px 5px 15px 0;
+}
+
+.fixed-height {
+    height: 500px;}
+    @media (max-width: 768px) {
+        .fixed-height {
+            height: auto; /* Automatic Height on Smaller Screens */
+        }
+    }
+
+/* ----- STYCKYNESS ----- */
+.sticky-container {
+    position: relative;   /* Defines the boundary for sticky */
+}
+
+.highlight-1 {
+    top: 200px;}
+.highlight-2 {
+    top: 290px;}
+.highlight-3 {
+    top: 380px;}
+
+    @media (max-width: 1200px) {
+        .highlight-1 {
+            top: 15vw;}
+        .highlight-2 {
+            top: 23.3vw;}
+        .highlight-3 {
+            top: 31.6vw;}
+    }
+
+    @media (max-width: 768px) {
+        .highlight-1 {
+            top: 100px;}
+        .highlight-2 {
+            top: 100px;}
+        .highlight-3 {
+            top: 100px;}
+    }
+
+    @media (max-width: 576px) {
+        .highlight-1 {
+            top: 90px;}
+        .highlight-2 {
+            top: 90px;}
+        .highlight-3 {
+            top: 90px;}
+    }
+
+/* ============================== */
+/* =====       FOOTER       ===== */
+/* ============================== */
+.footer-image {
+    position: relative; /* Ensure the content stays on top of the background */
+    background-image: url('/img/ObiWan-Sticker.png');
+    background-size: auto 80%; 
+    background-position: calc(50% + 375px) center; /* Center with offset */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    z-index: 9999; /* Ensure the content is above the background */
+}
+
+
+/* =================================== */
+/* =====         BOTTONS         ===== */
+/* =================================== */
+/* ----- PAGE BTNS ----- */
+.btn {
+    font-size: 18.5px;
+    margin-top: 5px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: background-color 0.3s ease;}
+.btn:hover,
+.btn:active,
+.btn:focus {
+    background-color: #c71610 !important;
+    color: #ffffff !important;
+}
+
+/* ----- SOCIAL MEDIA BTNS ----- */
+.icon-circle {
+    display: inline-flex; /* center 1 */
+    justify-content: center; /* center 2 */
+    width: 30px; /* Circle size */
+    height: 30px;
+    font-size: 19px; /* Icon size */
+    border-radius: 50%;
+    background-color: #ffffff; /* LinkedIn blue */
+    color: rgba(0, 0, 0, 0.75); /* Icon color */
+    transition: background-color 0.5s ease, transform 0.3s ease; /* Smooth transition to hover-color */
+    text-decoration: none;
+    margin: 0 10px;}
+.icon-circle i {
+    display: flex; /* center 1 */
+    align-items: center; /* center 2 */
+}
+
+.linkedin:hover {
+    background-color: #0077b5;
+    color: #ffffff;}
+.github:hover {
+    color: #ffffff;
+    background-color: black;}
+.email:hover {
+    background-color: #c71610;
+    color: #e4e4e4;}
+
+
+/* =================================== */
+/* =====        ANIMATIONS       ===== */
+/* =================================== */
+/* ----- HEADING 1 ----- */
+@keyframes flyInLeft {
+    from {
+        transform: translateX(-50%); /* Start off-screen to the left */
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        transform: translateX(0); /* End at the original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+@keyframes flyInRight {
+    from {
+        transform: translateX(50%); /* Start off-screen to the right */
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        transform: translateX(0); /* End at the original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+.fly-in-left {
+    animation: flyInLeft 2s ease-out forwards; /* Animation duration and easing */
+}
+
+.fly-in-right {
+    animation: flyInRight 2s ease-out forwards; /* Animation duration and easing */
+}
+
+/* ----- HEADING 2 ----- */
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Start slightly below */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at the original position */
+    }
+}
+
+/* JS Activates animation */
+.h2-animate {
+    animation: fadeInSlideUp 1s ease-out forwards;
+}
+
+/* ----- IMG LANDING PAGE ----- */
+/* IMG Initial Animation*/
+@keyframes slideUp {
+    from {
+        transform: translateY(70px); /* Starting Position */
+        opacity: 0;} /* Transparent*/
+    to {
+        transform: translateY(-20px); /* Original Position */
+        opacity: 1;} /*Visible */
+}
+/* IMG Constant Animation*/
+@keyframes floatUpDown {
+    0% { transform: translateY(-20px); } /* Original Position */
+    50% { transform: translateY(0); } /* Moving Height */
+    100% { transform: translateY(-20px); } /* Back to Original Position */
+}
+
+/* ----- IMG Portrait ----- */
+@media (min-width: 576px) {
+    @keyframes stickToPage {
+        0% {
+            transform: scale(1.2) rotate(5deg); /* Start slightly larger and rotated */
+            opacity: 0; /* Start invisible */
+        }
+        50% {
+            transform: scale(0.9) rotate(-2deg); /* Squish and rotate slightly */
+            opacity: 0.25;
+        }
+        70% {
+            transform: scale(1.05) rotate(1deg); /* Bounce back */
+            opacity: 0.75;
+        }
+        100% {
+            transform: scale(1) rotate(0deg); /* End at normal size and rotation */
+            opacity: 1; /* Fully visible */
+        }
+    }
+    .sticker-animate {
+        animation: stickToPage 1.5s ease-out forwards;
+    }
+    
+    img.img-fluid {
+        opacity: 0; /* Start completely invisible */
+        transform: scale(1.2) rotate(5deg); /* Match the starting state of the animation */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.highlight-full-img { /* IMG fills up whole .col */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures content fills until rounded corners */
+    display: block;
+}
+
+
+
+
+
+
+
+/* =================================== */
+/* =====        BYTEMENTOR       ===== */
+/* =================================== */
+.painpoints {
+    font-size: 60px; /* Circle size */
+
+}  
+.centric {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.box-img { /* IMG fills up whole .col */
+    max-height: 500px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+.box-img-2 { /* IMG fills up whole .col */
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.fixed-height-bm {
+    height: 500px;}
+    @media (max-width: 1200px) {
+        .fixed-height-bm {
+            height: auto; /* Automatic Height on Smaller Screens */
+        }
+    }
+
+
+
+
+/* =================================== */
+/* =====     TESTING / DEBUG     ===== */
+/* =================================== */
+.red-font {
+    color: #c71610;
+}
+
+/* * {
+    outline: 1px solid red;
+}    */
+
+
+
+
+.carousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item-drawing {
+    height: 100%;
+}
+
+
+
+.carousel-item-drawing img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures content fills until rounded corners */
+    display: block;
+}
+
+.carousel-item img {
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%); /* Makes arrows white */
+    opacity: 0.8; /* Adjust transparency */
+}
+
+/* On hover, make them stand out */
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    opacity: 1;
+}
+
+
+.responsive-video {
+    width: 100%;       /* Make it responsive within the column */
+    height: 500px;     /* Fixed height */
+    object-fit: cover; /* Ensures the video fills the container without distortion */
+    border-radius: 20px; /* Optional: Adds rounded corners */
+    display: block;    /* Removes extra spacing */
+}
+
+
+
+
+/* Make the Prism code box smaller */
+pre {
+    padding: 0 !important; /* Reduce padding to make it smaller */
+    border-radius: 20px !important; /* Slightly rounded corners */
+    max-width: 100% !important; /* Limit width to 80% of container */
+    margin: auto !important; /* Center the code block */
+    margin-bottom: 50px !important;
+    overflow-x: auto !important; /* Add horizontal scrolling if needed */
+}
+
+/* Customize inline code */
+code {
+    font-size: clamp(16px, 2vw, 19px) !important; /* Reduce font size */
+    background-color: #525251; /* Darker background */
+    margin: auto !important; /* Smaller padding */
+    border-radius: 3px; /* Rounded corners */
+    color: #ffffff; /* White text */
+}
+
+
+
+.dropdown-menu {
+    background-color: #050504;
+    padding-left: 10px;
+}
+  
