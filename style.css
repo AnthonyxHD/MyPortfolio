@@ -270,7 +270,7 @@ h3 {
 /* ============================== */
 .footer-image {
     position: relative; /* Ensure the content stays on top of the background */
-    background-image: url('/img/ObiWan-Sticker.png');
+    background-image: url('img/ObiWan-Sticker.png');
     background-size: auto 80%; 
     background-position: calc(50% + 375px) center; /* Center with offset */
     background-repeat: no-repeat; /* Prevent the image from repeating */
