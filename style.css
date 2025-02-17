@@ -232,36 +232,28 @@ h3 {
 }
 
 .highlight-1 {
-    top: 200px;}
+}
 .highlight-2 {
-    top: 290px;}
-.highlight-3 {
-    top: 380px;}
+}
+
+    @media (min-width: 1201px) {
+        .highlight-1 {
+            top: 180px;}
+        .highlight-2 {
+            top: 280px;}
+    }
 
     @media (max-width: 1200px) {
         .highlight-1 {
-            top: 15vw;}
+            top: 15.5vw;}
         .highlight-2 {
-            top: 23.3vw;}
-        .highlight-3 {
-            top: 31.6vw;}
+            top: 24vw;}
     }
 
-    @media (max-width: 768px) {
-        .highlight-1 {
-            top: 100px;}
-        .highlight-2 {
-            top: 100px;}
-        .highlight-3 {
-            top: 100px;}
-    }
-
-    @media (max-width: 576px) {
+    @media (max-width: 992px) {
         .highlight-1 {
             top: 90px;}
         .highlight-2 {
-            top: 90px;}
-        .highlight-3 {
             top: 90px;}
     }
 
