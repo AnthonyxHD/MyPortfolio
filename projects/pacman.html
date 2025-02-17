@@ -91,15 +91,16 @@
                 <div class="col-12 highlight-text light-gray-bg">
                     <p>
                         The Problem<br>
-                        Traditional PacMan is a single-player game, limiting competitive and cooperative gameplay opportunities.
+                        Traditional Pac-Man is a single-player game, limiting opportunities for competitive and cooperative gameplay.
                     </p>
                     <p>
                         The Goal<br>
-                        Expand PacMan into a two-playeer experience while maintaining the classic game's feel and mechanics.
+                        Expand Pac-Man into a two-player experience while maintaining the classic feel and mechanics.
                     </p>
                     <p>
                         My Role<br>
-                        Game design and development, from ideation to prototyping and final implementation, in a group of four.
+                        I was responsible for game design and development, from ideation to prototyping and final implementation, 
+                        as part of a team of four.
                     </p>
                 </div>
             </div>
@@ -119,25 +120,25 @@
                 <div class="col-12 highlight-text">
                     <div class="light-gray-font">
                         <p>
-                            To ensure PacMan Battle provided an engaging and competitive multiplayer experiece, we conducted
-                            a competitive audit to learn from existing project what already works and what doesn't. Our goal
-                            was to convert the iconic game into a multiplayer format while maintaining the retro aesthetic
-                            and game mechanics.
+                            To ensure PacMan Battle provided an engaging and competitive multiplayer experience, we conducted 
+                            a competitive audit, analyzing existing projects to understand what works and what doesn’t. Our 
+                            goal was to convert the iconic game into a multiplayer format while staying true to its retro 
+                            aesthetic and mechanics.
                         </p>
 
                         <h3>Limitations</h3>
                         <p>
-                            We explored Co-Op variations, but ultimately focused on turn-base competition due to technical
-                            constraints. A real-time online game demands a high data exchange frequency, which the server of
-                            our university could not deliver. This limitation left us with more competitors, which didn't
-                            correscond fully to the results of our competition audit.
+                            We explored co-op variations, but due to technical constraints, we ultimately focused on a 
+                            turn-based competition model. A real-time online multiplayer experience would require high data 
+                            exchange frequency, which the university’s server could not handle. As a result, some of our 
+                            competitive benchmarks didn’t fully align with our final approach.
                         </p>
 
                         <h3>Persona</h3>
                         <p>
-                            Since there was already a significant amount of research on the target audience of PacMan we
-                            conducted a secondary analysis on the potential users. With the results we developed an ad-hoc
-                            persona to better understand our target group's needs and frustrations.
+                            Since extensive research already existed on Pac-Man’s target audience, we conducted a secondary 
+                            analysis to understand our potential users better. Based on the findings, we developed an ad-hoc 
+                            persona to capture our target group's needs and frustrations.
                         </p>
 
                         <img src="../img/pacman/Persona_Lukas.png" alt="Persona Lukas displayed with his characteristics" class="pb-3 content-img">
@@ -149,9 +150,9 @@
                         <div class="row highlight g-0">
                             <div class="col-12 highlight-text light-gray-bg">
                                 <p>
-                                    Lukas <u>is</u> retro game enthusiast <u>who needs</u> an engaging multiplayer experience
-                                    of the iconic game PacMan <u>because</u> it allows him to relive the game socially with
-                                    his friends, enhancing nostalgia and fun.
+                                    Lukas <u>is</u> retro game enthusiast <u>who needs</u> an engaging multiplayer experience 
+                                    of Pac-Man <u>because</u> it allows him to relive the nostalgia of the game while playing 
+                                    socially with friends.
                                 </p>
                             </div>
                         </div>
@@ -215,10 +216,9 @@
                     <div class="highlight-text">
                         <h3>Sketching</h3>
                                 <p>
-                                    To explore different design concepts, we visualized our website with digital sketches.
-                                    Ouyr early sketches allowed us to quickly iterate on design choises before moving
-                                    into digital prototyping, ensuring that our approach remained true to the iconic
-                                    PacMan style.
+                                    To explore different design concepts, we visualized the game layout through digital sketches. 
+                                    Early iterations helped us quickly refine design choices before transitioning into digital 
+                                    prototyping, ensuring the final approach remained true to the Pac-Man aesthetic.
                                 </p>
                     </div>
                 </div>
@@ -248,13 +248,13 @@
                     <h3>Usability Study</h3>
 
                     <p>
-                        Once our initial game layout was in place, we conducted usability testing to validate
-                        our design decisions and the workability of the code.
+                        Once our initial game layout was in place, we conducted usability testing to validate our design decisions 
+                        and test the functionality of our code.
                     </p>
                     <p>
-                        The usability study involved a live demonstration of the prototype, presented to a group of 11 
-                        participants.The goal was to observe how users interacted with the game under real conditions, 
-                        allowing them to play freely and explore the mechanics at their own pace. 
+                        The usability test involved a live demonstration of the prototype to a group of 11 participants. They 
+                        could play freely and explore the mechanics naturally. We observed this real-world user interactions 
+                        and conducted interviews to identify areas for improvement. 
                     </p>
                 </div>
             </div>
@@ -262,20 +262,19 @@
                 <h3>Improvements</h3>
                 <p>
                     <u>Tunnel Mechanic</u><br>
-                    Removed game tunnel mechanic due to bugs where characters would escape the game area
+                    Removed due to a bug where characters could escape the game area.
                 </p>
                 <p>
                     <u>Scoring System</u><br>
-                    Points for ghosts, pellets, and fruits were adapted for a fairer competitive game
+                    Adjusted points for ghosts, pellets, and fruits to create a fairer competitive game.
                 </p>
                 <p>
                     <u>Local Storage</u>
-                    Implementation of highscore saving locally for competitive ranking
+                    Implemented local high-score saving for competitive ranking.
                 </p>
                 <p>
                     <u>Interactive Quiz</u>
-                    Since the online multiplayer mode wasn't feasible, an additional PacMan quiz was introduced to 
-                    maintain engagement
+                    Since online multiplayer wasn’t feasible, we introduced a Pac-Man-themed quiz to maintain engagement.
                 </p>
             </div>
                 
@@ -379,10 +378,9 @@
                 </div>
                 
                 <p>
-                    The game board is a grid-based system, where each tile represents different objects in an
-                    array.
+                    The game board is built using a grid-based system, where each tile represents different objects in an array.
                 </p>
-                <p>Map example:</p>
+                <p>Map Example:</p>
                 <div clas="col-12">
                     <pre>
                         <code class="language-javascript">
@@ -395,7 +393,7 @@
                     </pre>
                 </div>
 
-                <p>Dynamic generation:</p>
+                <p>Dynamic Generation:</p>
 
                 <div clas="col-12">
                     <pre>
@@ -417,8 +415,9 @@
                 </div>
 
                 <h3>Player and Movement Controls</h3>
-                <p>PacMan's movement follows a collision-based system. To avoid conflicts with webpage
-                    functions, only "W, A, S, D" keys were assigned for player controls.
+                <p>
+                    Pac-Man's movement follows a collision-based system. To avoid conflicts with webpage functions, only 
+                    W, A, S, D keys were assigned for player controls.
                 </p>
                 <div clas="col-12">
                     <pre>
@@ -449,8 +448,9 @@
                 </div>
 
                 <h3>Ghost AI and Pathfinding</h3>
-                <p>The ghosts radomly navigate while avoiding wall. At the same time the AI adjusts
-                    movement based on possible paths:
+                <p>
+                    The ghosts navigate randomly while avoiding walls. At the same time, the AI adjusts movement based 
+                    on available paths:
                 </p>
 
                 <div clas="col-12">
@@ -467,7 +467,7 @@
                     </pre>
                 </div>
 
-                <p>Ghost change behavior when PacMan eats a powerup:</p>
+                <p>Ghost behavior changes when Pac-Man Eats a Power-Up:</p>
 
                 <div clas="col-12">
                     <pre>
@@ -521,7 +521,7 @@
                     </pre>
                 </div>
 
-                <p>Eating a Power-Up lets PacMan eat ghosts</p>
+                <p>Eating a Power-Up allows Pac-Man to eat ghosts</p>
 
                 <div clas="col-12">
                     <pre>
@@ -536,24 +536,6 @@
             </div>
         </div>
     </div>       
-
-    
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- FOOTER -->
 
