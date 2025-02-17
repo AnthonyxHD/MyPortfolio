@@ -375,7 +375,7 @@ h3 {
 @keyframes slideUp {
     from {
         transform: translateY(70px); /* Starting Position */
-        opacity: 0;} /* Transparent*/
+        opacity: 0.1;} /* Transparent*/
     to {
         transform: translateY(-20px); /* Original Position */
         opacity: 1;} /*Visible */
