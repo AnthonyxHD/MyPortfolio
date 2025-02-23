@@ -61,6 +61,8 @@ h2 {
     font-size: clamp(20px, 5vw, 60px); /* (min, preffered, max) */
     text-align: center;
     opacity: 0; /* Oppacity for Animation */
+    padding; 0;
+    margin: 0;
 /* Colour */
     color: #FFFFFF;
 }
@@ -96,6 +98,7 @@ h3 {
 /* =================================== */
 /* ----- FONTS ----- */
 .black-font {color: #171717;}
+.gray-font {color: #525251;}
 .light-gray-font {color: #d7d2d0}
 
 /* ----- BACKGROUNDS ----- */
@@ -252,9 +255,9 @@ h3 {
 
     @media (max-width: 992px) {
         .highlight-1 {
-            top: 90px;}
+            top: 0px;}
         .highlight-2 {
-            top: 90px;}
+            top: 0px;}
     }
 
 /* ============================== */

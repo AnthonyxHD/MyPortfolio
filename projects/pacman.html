@@ -91,16 +91,16 @@
                 <div class="col-12 highlight-text light-gray-bg">
                     <p>
                         The Problem<br>
-                        Traditional Pac-Man is a single-player game, limiting opportunities for competitive and cooperative gameplay.
+                        <span class="gray-font">Traditional Pac-Man is a single-player game, limiting opportunities for competitive and cooperative gameplay.</span>
                     </p>
                     <p>
                         The Goal<br>
-                        Expand Pac-Man into a two-player experience while maintaining the classic feel and mechanics.
+                        <span class="gray-font">Expand Pac-Man into a two-player experience while maintaining the classic feel and mechanics.</span>
                     </p>
                     <p>
                         My Role<br>
-                        I was responsible for game design and development, from ideation to prototyping and final implementation, 
-                        as part of a team of four.
+                        <span class="gray-font">I was responsible for game design and development, from ideation to prototyping and final implementation, 
+                        as part of a team of four.</span> 
                     </p>
                     <div class="d-flex justify-content-end">
                         <a href="https://anthonyxhd.github.io/pac-man/" target="_blank" class="btn gray-bg text-white">Play Pac-Man Battle</a>
@@ -108,7 +108,6 @@
                 </div>
             </div>
         </div>
-        
     </div>
 
 <!-- UNDERSTANDING THE USER -->
@@ -214,7 +213,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-xl-7 d-flex align-items-center">
-                    <div class="highlight-tex">
+                    <div class="highlight-text">
                         <h3>Sketching</h3>
                                 <p>
                                     To explore different design concepts, we visualized the game layout through digital sketches. 
@@ -263,22 +262,40 @@
             </div>
             <div class="row highlight-text light-gray-font mt-3">
                 <h3>Improvements</h3>
-                <p>
-                    <u>Tunnel Mechanic</u><br>
-                    Removed due to a bug where characters could escape the game area.
-                </p>
-                <p>
-                    <u>Scoring System</u><br>
-                    Adjusted points for ghosts, pellets, and fruits to create a fairer competitive game.
-                </p>
-                <p>
-                    <u>Local Storage</u>
-                    Implemented local high-score saving for competitive ranking.
-                </p>
-                <p>
-                    <u>Interactive Quiz</u>
-                    Since online multiplayer wasn’t feasible, we introduced a Pac-Man-themed quiz to maintain engagement.
-                </p>
+
+                <!-- Small Screens Layout -->
+                <div class="row d-lg-none">
+                    <div class="row">
+                        <div class="col-3 centric"><i class="bi bi-1-circle-fill painpoints"></i></div>
+                        <div class="col-9"><p class="light-gray-font"><span class="text-white">Tunnel Mechanic</span><br>
+                                                    Removed due to a bug where characters could escape the game area</p></div>
+                        <div class="col-3 centric"><i class="bi bi-2-circle-fill painpoints"></i></div>
+                        <div class="col-9"><p class="light-gray-font"><span class="text-white">Scoring System</u><br>
+                                                    Adjusted points to create a fairer competitive game</p></div>
+                        <div class="col-3 centric"><i class="bi bi-3-circle-fill painpoints"></i></div>
+                        <div class="col-9"><p class="light-gray-font"><span class="text-white">Local Score Storage</span><br>
+                                                    Information is spread across multiple sources</p></div>
+                        <div class="col-3 centric"><i class="bi bi-4-circle-fill painpoints"></i></div>
+                        <div class="col-9"><p class="light-gray-font"><span class="text-white">Interactive Quiz</span><br>
+                                                    We introduced a Pac-Man-themed quiz to maintain engagemen</p></div>
+                    </div>
+                </div>
+                <!-- Large Screens Layout -->
+                <div class="row d-none d-lg-flex">
+                    <div class="col-3 centric"><i class="bi bi-1-circle-fill painpoints"></i></div>
+                    <div class="col-3 centric"><i class="bi bi-2-circle-fill painpoints"></i></div>
+                    <div class="col-3 centric"><i class="bi bi-3-circle-fill painpoints"></i></div>
+                    <div class="col-3 centric"><i class="bi bi-4-circle-fill painpoints"></i></div>
+
+                    <div class="col-3 centric"><p class="light-gray-font"><span class="text-white">Tunnel Mechanic</span><br>
+                                                Removed due to a bug where characters could escape the game area</p></div>
+                    <div class="col-3 centric"><p class="light-gray-font"><span class="text-white">Scoring System</span><br>
+                                                Adjusted points to create a fairer competitive game</p></div>
+                    <div class="col-3 centric"><p class="light-gray-font"><span class="text-white">Local Score Storage</span><br>
+                                                Information is spread across multiple sources</p></div>
+                    <div class="col-3 centric"><p class="light-gray-font"><span class="text-white">Interactive Quiz</span><br>
+                                                We introduced a Pac-Man-themed quiz to maintain engagemen</p></div>
+                </div>
             </div>
                 
             </div>
@@ -383,24 +400,23 @@
                 <p>
                     The game board is built using a grid-based system, where each tile represents different objects in an array.
                 </p>
-                <p>Map Example:</p>
                 <div clas="col-12">
                     <pre>
                         <code class="language-javascript">
+    // Map Example    
     const map = [
         ['1', 'a', 'a', '2'],  // Walls = a / Corners = Numbers
         ['b', '.', '.', 'b'],  // Pellets = . / Vertical Walls = b
         ['b', 'p', 'p', 'b'],  // Power-ups = p
-        ['4', 'a', 'a', '3']  
+        ['4', 'a', 'a', '3']   // Walls = a / Corners = Numbers
     ];</code>
                     </pre>
                 </div>
 
-                <p>Dynamic Generation:</p>
-
                 <div clas="col-12">
                     <pre>
                         <code class="language-javascript">
+    // Dynamic Generation
     function generateMap () {
         map.forEach((row, i) => { 
             row.forEach((symbol, j) => { 
@@ -425,6 +441,7 @@
                 <div clas="col-12">
                     <pre>
                         <code class="language-javascript">
+    // Player Movement
     document.addEventListener("keydown", (event) => {
         switch (event.key) {
             case 'ArrowUp': player.velocity.y = -3; break;
@@ -436,11 +453,10 @@
                     </pre>
                 </div>
 
-                <p>Collision Detection:</p>
-
                 <div clas="col-12">
                     <pre>
                         <code class="language-javascript">
+    // Collision Detection
     boundaries.forEach((boundary) => {
         if (circleCollidesWithRectangle({ circle: player, rectangle: boundary })) {
             player.velocity.x = 0;
@@ -453,12 +469,13 @@
                 <h3>Ghost AI and Pathfinding</h3>
                 <p>
                     The ghosts navigate randomly while avoiding walls. At the same time, the AI adjusts movement based 
-                    on available paths:
+                    on available paths.
                 </p>
 
                 <div clas="col-12">
                     <pre>
                         <code class="language-javascript">
+    // Ghosts Movement
     const possibleDirections = ['up', 'down', 'left', 'right'];
     const randomDirection = possibleDirections[Math.floor(Math.random() * possibleDirections.length)];
     switch (randomDirection) {
@@ -470,11 +487,10 @@
                     </pre>
                 </div>
 
-                <p>Ghost behavior changes when Pac-Man Eats a Power-Up:</p>
-
                 <div clas="col-12">
                     <pre>
                         <code class="language-javascript">
+    // Ghosts Change Behavior
     ghosts.forEach(ghost => {
         ghost.scared = true;
         setTimeout(() => ghost.scared = false, 5000);
@@ -483,11 +499,11 @@
                 </div>
 
                 <h3>Multiplayer Turn System</h3>
-                <p>Each player gets 20s per turn:</p>
 
                 <div clas="col-12">
                     <pre>
                         <code class="language-javascript">
+    // Round Timer
     var timeLeft = 20;
     var timerId = setInterval(() => {
         timeLeft--;
@@ -499,11 +515,10 @@
                     </pre>
                 </div>
 
-                <p>When the turn ends, the next player starts:</p>
-
                 <div clas="col-12">
                     <pre>
                         <code class="language-javascript">
+    // Switch Turn
     function switchTurn() {
         currentPlayer = currentPlayer === 1 ? 2 : 1;
         resetPlayerPosition();
@@ -512,11 +527,11 @@
                 </div>
 
                 <h3>Scoring System and Power-Ups</h3>
-                <p>Players earn points by eating pellets and ghosts (when scared):</p>
 
                 <div clas="col-12">
                     <pre>
                         <code class="language-javascript">
+    // Power-Up Collision Effect
     if (circleCollidesWithRectangle({ circle: player, rectangle: pellet })) {
         pellets.splice(i, 1); // Remove pellet
         score += 10; // Increase score
@@ -524,11 +539,10 @@
                     </pre>
                 </div>
 
-                <p>Eating a Power-Up allows Pac-Man to eat ghosts</p>
-
                 <div clas="col-12">
                     <pre>
                         <code class="language-javascript">
+    // Power to Eat Ghosts
     if (circleCollidesWithRectangle({ circle: player, rectangle: powerUp })) {
         powerUps.splice(i, 1);
         ghosts.forEach(ghost => ghost.scared = true);
