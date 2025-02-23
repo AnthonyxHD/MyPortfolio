@@ -61,7 +61,7 @@ h2 {
     font-size: clamp(20px, 5vw, 60px); /* (min, preffered, max) */
     text-align: center;
     opacity: 0; /* Oppacity for Animation */
-    padding; 0;
+    padding: 0;
     margin: 0;
 /* Colour */
     color: #FFFFFF;
