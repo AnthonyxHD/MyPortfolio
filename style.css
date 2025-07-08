@@ -235,28 +235,21 @@ h3 {
 }
 
 .highlight-1 {
+    top: 115px;
 }
 .highlight-2 {
+    top: 215px;
 }
-
-    @media (min-width: 1201px) {
-        .highlight-1 {
-            top: 180px;}
-        .highlight-2 {
-            top: 280px;}
-    }
-
-    @media (max-width: 1200px) {
-        .highlight-1 {
-            top: 15.5vw;}
-        .highlight-2 {
-            top: 24vw;}
-    }
+.highlight-3 {
+    top: 315px;
+}
 
     @media (max-width: 992px) {
         .highlight-1 {
             top: 0px;}
         .highlight-2 {
+            top: 0px;}
+        .highlight-3 {
             top: 0px;}
     }
 
