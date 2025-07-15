@@ -156,10 +156,10 @@ h3 {
     }
 .landing-img-bytementor {
     width: 40%;
-    margin-top: -4vw;}
+    margin-top: -1.5vw;}
     @media (max-width: 576px) { /* Responsive*/
         .landing-img-bytementor {
-            width: 90%;
+            width: 80%;
             margin-top: 25vw;
         }
     }
