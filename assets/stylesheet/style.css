@@ -316,7 +316,7 @@ ul, ol, li {
 @media (max-width: 576px) {
     .landing-home,
     .landing-app,
-    .landing-web {width: 50%;}
+    .landing-web {width: 60%;}
 }
 
 
