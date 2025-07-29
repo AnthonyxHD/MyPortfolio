@@ -1,0 +1,78 @@
+/* ----- Text Animations ----- */
+@keyframes flyInLeft {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;}
+    to {
+        transform: translateX(0);
+        opacity: 1;}
+}
+@keyframes flyInRight {
+    from {
+        transform: translateX(50%);
+        opacity: 0;}
+    to {
+        transform: translateX(0);
+        opacity: 1;}
+}
+
+.fly-in-left,
+.fly-in-right {
+    opacity: 0; /* Start hidden */
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+.fly-in-left {
+    animation-name: flyInLeft;
+}
+.fly-in-right {
+    animation-name: flyInRight;
+}
+
+
+/* ----- Image Animations ----- */
+@keyframes slideUp {
+    from {
+        transform: translateY(70px);
+        opacity: 0.1;}
+    to {
+        transform: translateY(0);
+        opacity: 1;}
+}
+@keyframes floatUpDown {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(20px); }
+    100% { transform: translateY(0); }
+}
+
+.landing-img-animation {
+    animation: 
+        slideUp 3s ease-out,
+        floatUpDown 6s ease-in-out infinite 3s;
+    animation-fill-mode: forwards;
+}
+
+/* Latest Projects Stick Animation > 3.2rem dif */
+.box-top {
+    top: 1.9rem;
+}
+@media (max-width: 992px) {
+    .box-top {top: 0.9em}
+}
+@media (max-width: 576px) {
+    .box-top {top: 0.5em;}
+}
+
+
+/* ----- Modal Animations ----- */
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}

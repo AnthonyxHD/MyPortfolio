@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Match Psysical Screen Width -->
+    <title>Little Wins Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/stylesheet/animation.css" />
+    <link rel="stylesheet" href="../assets/stylesheet/style.css" />
+</head>
+
+<body>
+ <!-- Landing Page -->
+    <div class="d-flex flex-column min-vh-100 w-100">
+     <!-- Navigation -->
+        <nav class="nav-bg navbar navbar-dark navbar-expand-md nav-bg
+                    p-3 py-sm-4 px-sm-5">
+            <div class="container-fluid">
+                <!-- Brand Logo -->
+                <a class="brand" href="../index.html"><img src="../assets/img/Brand.svg" alt="Branding of Anthony Zoss"></a>
+                <!-- Hamburger Button when Small -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Subpages -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item pe-sm-3"><a class="nav-link" href="../index.html">HOME</a></li>
+                        <li class="nav-item pe-sm-3"><a class="nav-link" href="../projects.html">PROJECTS</a></li>
+                        <li class="nav-item pe-sm-3"><a class="nav-link" href="../gallery.html">GALLERY</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../about.html">ABOUT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+     <!-- Visuals -->
+        <div class="d-flex flex-column align-items-center justify-content-center flex-grow-1
+                    pt-5">
+            <h1 class="fly-in-left">LITTLE WINS</h1>
+            <img src="../assets/img/little wins/Little Wins Header.png" class="landing-img landing-app landing-img-animation"
+            alt="Screes of Little Wins floating showed in three different angles">
+        </div>
+     <!-- Contact -->
+        <div class="fixed-element z-2
+                    pb-4 px-sm-5">
+            <div>
+                <div class="micro-txt light-gray-txt text-center pb-2">CONTACT</div>
+                <div class="d-flex justify-content-center">    
+                    <a href="https://www.linkedin.com/in/anthonyzoss/" target="_blank" class="icon-circle linkedin light-gray-bg text-black"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/AnthonyxHD?tab=repositories" target="_blank" class="icon-circle github light-gray-bg text-black"><i class="bi bi-github"></i></a>
+                    <a href="mailto:anthonyzoss97@gmail.com" class="icon-circle email light-gray-bg text-black"><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- End Landing Page-->
+
+ <!-- Overview -->
+    <div class="sticky-container pt-5">
+     <!-- Section Title -->
+         <div class="container sticky-top dark-bg
+                    py-3">
+            <h2>OVERVIEW</h2>        
+        </div>
+     <!-- Overview Text -->
+        <div class="container pt-5">
+            <div class="rounded-4 overflow-hidden">
+                <!-- Thumbnail -->
+                <div>
+                    <img src="../assets/img/Little Wins Thumbnail.png"
+                    class="box-img box-img-sm w-100"
+                    alt="Little Wins Thumbnail">
+                </div>
+                <!-- Content -->
+                <div class="box-txt dark-gray-bg text-white
+                            p-3 p-lg-5">        
+                    <p>
+                        <span class="bold-txt">The Problem</span><br>
+                        Most to-do apps are overloaded with features, which can feel overwhelming, especially 
+                        for people recovering from burnout who need a gentle way to ease back into daily tasks.
+                    </p>
+                    <p>
+                        <span class="bold-txt">The Goal</span><br>
+                        Create a simple and supportive to-do app that helps users rebuild their productivity 
+                        without pressure.
+                    </p>
+                    <p>
+                        <span class="bold-txt">My Role</span><br>
+                        I led every aspect of this project from start to finish.
+                    </p>
+                    <p>
+                        <span class="bold-txt">The Setup</span><br>
+                        This project took place during an intensive, week-long UX/UI advanced workshop, with 
+                        a total workload of roughly 20 hours on this project.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+ <!-- End Overview -->
+
+ <!-- Understanding the User -->
+    <div class="sticky-container pt-5">
+     <!-- Section Title -->
+        <div class="container sticky-top dark-bg
+                    py-3">
+            <h2>UNDERSTANDING THE USER</h2>        
+        </div>
+     <!-- Main Text -->
+        <div class="container pt-5">
+            <div class="box-txt text-white
+                        px-3 px-lg-5">
+             <!-- User Research-->
+                <h3>User Research</h3>
+                <p>
+                    I started by diving into the mindset of people who’ve experienced burnout, specifically those 
+                    who want to slowly reintroduce structure and productivity into their lives without feeling 
+                    overwhelmed. At first, I assumed they needed simpler tools, but I soon realized it was more 
+                    about feeling safe, not pressured.
+                </p>
+                <div>
+                    <p>To dig deeper, I:</p>
+                    <ul>
+                        <li>Held informal interviews with people who had been through burnout</li>
+                        <li>Collected key characteristics of potential users</li>
+                        <li>Mapped insights into an affinity diagram</li>
+                    </ul>
+                </div>
+             <!-- Pain Points -->
+                <h3>Pain Points</h3>
+                <!-- Small Screens-->
+                <div class="row d-lg-none">
+                    <div class="row">
+                        <!-- Painpoint 1 -->
+                        <div class="col-2"><i class="bi bi-1-circle-fill painpoint"></i></div>
+                        <div class="col-10">
+                            <p class="mb-3">
+                                <span class="bold-txt">Aggressive Reminders:</span><br>
+                                Add pressure instead of encouragement
+                            </p>
+                        </div>
+                        <!-- Painpoint 2 -->
+                        <div class="col-2"><i class="bi bi-2-circle-fill painpoint"></i></div>
+                        <div class="col-10">
+                            <p class="mb-3">
+                                <span class="bold-txt">Too Many Tasks:</span><br>
+                                Seeing long lists can feel overwhelming
+                            </p>
+                        </div>
+                        <!-- Painpoint 3 -->
+                        <div class="col-2"><i class="bi bi-3-circle-fill painpoint"></i></div>
+                        <div class="col-10">
+                            <p class="mb-3">
+                                <span class="bold-txt">Cold Interfaces:</span><br>
+                                Most to-do apps feel transactional, lacking emotional support
+                            </p>
+                        </div>
+                        <!-- Painpoint 4 -->
+                        <div class="col-2"><i class="bi bi-4-circle-fill painpoint"></i></div>
+                        <div class="col-10">
+                            <p>
+                                <span class="bold-txt">Fear of Falling Behind:</span><br>
+                                Metrics can worsen guilt during slow days
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Large Screens Layout -->
+                <div class="row d-none d-lg-flex text-center">
+                    <!-- Icons -->
+                    <div class="col-3 mb-3"><i class="bi bi-1-circle-fill painpoint"></i></div>
+                    <div class="col-3 mb-3"><i class="bi bi-2-circle-fill painpoint"></i></div>
+                    <div class="col-3 mb-3"><i class="bi bi-3-circle-fill painpoint"></i></div>
+                    <div class="col-3 mb-3"><i class="bi bi-4-circle-fill painpoint"></i></div>
+                    <!-- Text -->
+                    <!-- Painpoint 1 -->
+                    <div class="col-3">
+                        <p>
+                            <span class="bold-txt">Aggressive Reminders:</span><br>
+                            Add pressure instead of encouragement
+                        </p>
+                    </div>
+                    <!-- Painpoint 2 -->
+                    <div class="col-3">
+                        <p>
+                            <span class="bold-txt">Too Many Tasks:</span><br>
+                            Seeing long lists can feel overwhelming
+                        </p>
+                    </div>
+                    <!-- Painpoint 3 -->
+                    <div class="col-3">
+                        <p>
+                            <span class="bold-txt">Cold Interfaces:</span><br>
+                            Most to-do apps feel transactional, lacking emotional support
+                        </p>
+                    </div>
+                    <!-- Painpoint 4 -->
+                    <div class="col-3">
+                        <p>
+                            <span class="bold-txt">Fear of Falling Behind:</span><br>
+                            Metrics can worsen guilt during slow days
+                        </p>
+                    </div>
+                </div>
+             <!-- Persona-->
+                <h3>Persona</h3>
+                <p>
+                    Using these insights, I developed three ad hoc personas, but focused on the main persona 
+                    - Nina - for further development.
+                </p>
+                <img src="../assets/img/little wins/Persona Nina Keller.png"
+                class="w-100 modal-trigger"
+                alt="Persona Nina and her characteristics">
+             <!-- Empathy Map-->
+                <h3>Empathy Map</h3>
+                <img src="../assets/img/little wins/Empathy Map Nina Keller.png"
+                class="w-100 modal-trigger"
+                alt="Empathy Map of Nina Keller shower a regular day of hers">
+                <p>
+                    To focus my design efforts, I created user stories, scenarios, storyboards and empathy 
+                    maps, leading to the definition of my Point-of-View (POV) statement.
+                </p>
+             <!-- Problem Statement -->
+                <h3>Point-of-View (PoV) statement</h3>
+                <div class="container box-txt dark-gray-bg rounded-4">
+                    <p class="py-4 mx-4">
+                        Nina <span class="bold-txt">is</span> a Master's student on leave due to burnout,
+                        <span class="bold-txt">who needs </span> a way to gently rebuild structure in her life,
+                        <span class="bold-txt">because</span> she wants to feel in control again.</p>
+                </div>
+             <!-- User Flows -->
+                <h3>User Flows</h3>
+                <p>
+                    The app should feel non-pressuring, without complicated settings or priority metrics. I 
+                    identified "create a new task” to be the main user flow, which I designed to be the 
+                    centerpiece of the app.
+                </p>
+                <img src="../assets/img/little wins/User Flow Little Wins.png"
+                    class="w-100 modal-trigger"
+                    alt="User Flow: Create a new Task">
+            </div>   
+        </div>
+    </div>
+ <!-- End Understanding the User -->
+
+ <!-- Starting the Design -->
+    <div class="sticky-container pt-5">
+     <!-- Section Title -->
+        <div class="container sticky-top dark-bg
+                    py-3">
+            <h2>STARTING THE DESIGN</h2>        
+        </div>
+     
+        <div class="container pt-5">
+            <div class="box-txt text-white
+                        px-3 px-lg-5">
+             <!-- Sketching -->   
+                <h3>Sketching</h3>
+                <p>
+                    My main challenge was breaking free from the typical feature-heavy mindset of productivity 
+                    apps. Without realizing it, I added too many features, which contradicted the needs of my 
+                    users. I began stripping away features to make the design simpler.
+                </p>
+                 <!-- Carousel -->
+                <div class="position-relative method-carousel">
+                    <!-- Left Arrow -->
+                    <button class="method-arrow arrow-left d-none" id="prevBtn" aria-label="Previous">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <!-- Images -->
+                    <div class="method-viewport">
+                        <div class="method-gallery" id="track">
+                            <img src="../assets/img/little wins/Sketch 1.jpeg" class="w-100 modal-trigger" alt="Sketches of Little Wins in a sheet of paper">
+                            <img src="../assets/img/little wins/Sketch 2.jpeg" class="w-100 modal-trigger" alt="Sketches of Little Wins in a sheet of paper">
+                            <img src="../assets/img/little wins/Sketch 3.jpeg" class="w-100 modal-trigger" alt="Sketches of Little Wins in a sheet of paper">
+                            <img src="../assets/img/little wins/Sketch 4.jpeg" class="w-100 modal-trigger" alt="Sketches of Little Wins in a sheet of paper">
+                            <img src="../assets/img/little wins/Sketch 5.jpeg" class="w-100 modal-trigger" alt="Sketches of Little Wins in a sheet of paper">
+                            <img src="../assets/img/little wins/Sketch 6.jpeg" class="w-100 modal-trigger" alt="Sketches of Little Wins in a sheet of paper">
+                        </div>
+                    </div>
+                    <!-- Right arrow -->
+                    <button class="method-arrow arrow-right" id="nextBtn" aria-label="Next">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+             <!-- Wireframing -->   
+                <h3>Wireframing</h3>
+                <p>
+                    For the wireframes, I focused on the main user flow - create a new task - and incorporated 
+                    an option to add a location. This was the most requested feature during my informal 
+                    interviews, as many people felt that knowing where a task needed to happen helped them 
+                    plan their days.
+                </p>
+                 <!-- Carousel -->
+                <div class="position-relative method-carousel">
+                    <!-- Left Arrow -->
+                    <button class="method-arrow arrow-left d-none" id="prevBtn" aria-label="Previous">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <!-- Images -->
+                    <div class="method-viewport">
+                        <div class="method-gallery" id="track">
+                            <img src="../assets/img/little wins/Wireframe 1.png" class="w-100 modal-trigger rounded-4" alt="Welcome screen wireframe of Little Wins">
+                            <img src="../assets/img/little wins/Wireframe 2.png" class="w-100 modal-trigger rounded-4" alt="Homescreen wireframe of Little Wins">
+                            <img src="../assets/img/little wins/Wireframe 3.png" class="w-100 modal-trigger rounded-4" alt="Add new task wireframe of Little Wins">
+                            <img src="../assets/img/little wins/Wireframe 4.png" class="w-100 modal-trigger rounded-4" alt="Task details wireframe of Little Wins">
+                            <img src="../assets/img/little wins/Wireframe 5.png" class="w-100 modal-trigger rounded-4" alt="Add location wireframe of Little Wins">
+                        </div>
+                    </div>
+                    <!-- Right arrow -->
+                    <button class="method-arrow arrow-right" id="nextBtn" aria-label="Next">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>            
+             <!-- Usability Test --> 
+                <h3>Usability Test</h3>
+                <div>
+                    <p>
+                        At this stage, I ran three usability tests with my wireframes to check if the process 
+                        felt intuitive and whether the initial spacing and sizing worked for my app. Through 
+                        this early testing, I uncovered two key issues:
+                        <ul>
+                            <li>The urgency metrics inspired by the Eisenhower matrix were not clear. Users 
+                                struggled to understand when to “delegate” or “delete”.</li>
+                            <li>Participants expected a more spaced-out design, craving extra breathing room 
+                                to reduce cognitive load.</li>
+                        </ul>
+                    </p>
+                </div>
+                <p>
+                    To address the first issue, I reduced the urgency options to just “do” and “schedule” 
+                    and removed the "Show More" option. Only when the corresponding urgency is selected, 
+                    additional fields appear. For example, if you select "schedule", you can then choose a 
+                    deadline, but not if you select "do".
+                </p>
+                <img src="../assets/img/little wins/Wireframe changes.png"
+                class="w-100 modal-trigger"
+                alt="An overview of the changes done to the wireframes due to the usability test results">
+            </div>
+        </div>
+    </div>
+ <!-- End Starting the Design -->
+
+ <!-- Refining the Desing -->
+    <div class="sticky-container pt-5">
+     <!-- Section Title -->
+        <div class="container sticky-top dark-bg
+                    py-3">
+            <h2>REFINING THE DESIGN</h2>        
+        </div>
+    <!-- Main Text -->
+        <div class="container pt-5">
+            <div class="box-txt text-white
+                        px-3 px-lg-5">
+             <!-- High Fidelity Prototype-->
+                <h3>High-Fidelity Prototype</h3>
+                <!-- Image 1-->
+                <img src="../assets/img/little wins/Little Wins Preview.png"
+                class="w-100 modal-trigger"
+                alt="A preview of Little Things showing the three main screens">
+                <!-- Image 2 -->
+                 <img src="../assets/img/little wins/Little Wins Screens.png"
+                class="w-100 modal-trigger"
+                alt="Screens of Little Things">
+                <!-- Prototype -->
+                <div class="d-none d-md-block w-100">
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600"
+                    src="https://embed.figma.com/proto/5mCOfTeQBFukqFJK0kSFt3/03-UI-Design?page-id=183%3A978&node-id=372-1241&p=f&viewport=555%2C294%2C0.34&scaling=contain&content-scaling=fixed&starting-point-node-id=372%3A1241&embed-host=share"
+                    allowfullscreen></iframe>
+                </div>
+                <!-- Future Improvements -->
+                 <h3>Future Improvements</h3>
+                 <p>
+                    After one week, I was able to create the main user flow for this app. My biggest challenge 
+                    was balancing a simple yet visually appealing user interface that truly supports my 
+                    potential users in reaching their goals. Due to time restrictions, I’ve noted several 
+                    future improvements to explore, that I was not able to implement yet:
+                 </p>
+                <!-- Small Screens-->
+                <div class="row d-lg-none">
+                    <div class="row">
+                        <!-- Painpoint 1 -->
+                        <div class="col-2"><i class="bi bi-1-circle-fill painpoint"></i></div>
+                        <div class="col-10">
+                            <p class="mb-3">
+                                <span class="bold-txt">Animations:</span><br>
+                                Implement subtle animations that reinforce a sense of encouragement
+                            </p>
+                        </div>
+                        <!-- Painpoint 2 -->
+                        <div class="col-2"><i class="bi bi-2-circle-fill painpoint"></i></div>
+                        <div class="col-10">
+                            <p class="mb-3">
+                                <span class="bold-txt">Filtering:</span><br>
+                                Explore ways to filter existing tasks
+                            </p>
+                        </div>
+                        <!-- Painpoint 3 -->
+                        <div class="col-2"><i class="bi bi-3-circle-fill painpoint"></i></div>
+                        <div class="col-10">
+                            <p class="mb-3">
+                                <span class="bold-txt">Personalization:</span><br>
+                                Allow small personal touches, like choosing colours
+                            </p>
+                        </div>
+                        <!-- Painpoint 4 -->
+                        <div class="col-2"><i class="bi bi-4-circle-fill painpoint"></i></div>
+                        <div class="col-10">
+                            <p>
+                                <span class="bold-txt">Gentle reminders:</span><br>
+                                Test soft, customizable reminders that help nudge users without pressure
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Large Screens Layout -->
+                <div class="row d-none d-lg-flex text-center">
+                    <!-- Icons -->
+                    <div class="col-3 mb-3"><i class="bi bi-1-circle-fill painpoint"></i></div>
+                    <div class="col-3 mb-3"><i class="bi bi-2-circle-fill painpoint"></i></div>
+                    <div class="col-3 mb-3"><i class="bi bi-3-circle-fill painpoint"></i></div>
+                    <div class="col-3 mb-3"><i class="bi bi-4-circle-fill painpoint"></i></div>
+                    <!-- Text -->
+                    <!-- Painpoint 1 -->
+                    <div class="col-3">
+                        <p>
+                            <span class="bold-txt">Animations:</span><br>
+                            Implement subtle animations that reinforce a sense of encouragement
+                        </p>
+                    </div>
+                    <!-- Painpoint 2 -->
+                    <div class="col-3">
+                        <p>
+                            <span class="bold-txt">Filtering:</span><br>
+                            Explore ways to filter existing tasks
+                        </p>
+                    </div>
+                    <!-- Painpoint 3 -->
+                    <div class="col-3">
+                        <p>
+                            <span class="bold-txt">Personalization:</span><br>
+                            Allow small personal touches, like choosing colours
+                        </p>
+                    </div>
+                    <!-- Painpoint 4 -->
+                    <div class="col-3">
+                        <p>
+                            <span class="bold-txt">Gentle reminders:</span><br>
+                            Test soft, customizable reminders that help nudge users without pressure
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- End Refining the Desing -->
+
+ <!-- Modal -->
+    <div id="myModal" class="modal">
+        <!-- Close Button -->
+        <span class="close">&times;</span>
+        <!-- Modal Content -->
+        <img class="modal-content" id="img01">
+    </div>
+ <!-- End Modal -->
+
+ <!-- Footer -->
+    <div class="sticky-container light-gray-bg py-5 mt-5 z-3">
+        <div class="container box-txt">
+            <h2 class="align-self-center text-black">Let's work together!</h2>
+            <p class="text-center align-self-center">For any inquiries, collaborations, or just to say hello. I would love to hear from you!</p>
+            <div class="align-self-center">    
+                <a href="https://www.linkedin.com/in/anthonyzoss/" target="_blank" class="icon-circle linkedin dark-gray-bg text-white"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/AnthonyxHD?tab=repositories" target="_blank" class="icon-circle github dark-gray-bg text-white"><i class="bi bi-github"></i></a>
+                <a href="mailto:anthonyzoss97@gmail.com" class="icon-circle email dark-gray-bg text-white"><i class="bi bi-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Disclaimer -->
+    <div class="sticky-container dark-bg py-3 z-3">
+        <p class="micro-txt text-white text-center">© 2025 Anthony Zoss. All rights reserved.</p>
+    </div>
+ <!-- End Footer -->
+
+
+ <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/modal-img.js"></script>
+
+
+
+
+<script src="../scripts/carousel.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Match Psysical Screen Width -->
+    <title>PacMan Battle Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/stylesheet/animation.css" />
+    <link rel="stylesheet" href="../assets/stylesheet/style.css" />
+</head>
+
+<body>
+ <!-- Landing Page -->
+    <div class="d-flex flex-column min-vh-100 w-100">
+     <!-- Navigation -->
+        <nav class="nav-bg navbar navbar-dark navbar-expand-md nav-bg
+                    p-3 py-sm-4 px-sm-5">
+            <div class="container-fluid">
+                <!-- Brand Logo -->
+                <a class="brand" href="../index.html"><img src="../assets/img/Brand.svg" alt="Branding of Anthony Zoss"></a>
+                <!-- Hamburger Button when Small -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Subpages -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item pe-sm-3"><a class="nav-link" href="../index.html">HOME</a></li>
+                        <li class="nav-item pe-sm-3"><a class="nav-link" href="../projects.html">PROJECTS</a></li>
+                        <li class="nav-item pe-sm-3"><a class="nav-link" href="../gallery.html">GALLERY</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../about.html">ABOUT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+     <!-- Visuals -->
+        <div class="d-flex flex-column align-items-center justify-content-center flex-grow-1
+                    pt-5">
+            <h1 class="fly-in-left">PACMAN BATTLE</h1>
+            <img src="../assets/img/pacman battle/PacMan Battle Header.png" class="landing-img landing-web landing-img-animation"
+            alt="Desktop screen of PacMan Battle">
+        </div>
+     <!-- Contact -->
+        <div class="fixed-element z-2
+                    pb-4 px-sm-5">
+            <div>
+                <div class="micro-txt light-gray-txt text-center pb-2">CONTACT</div>
+                <div class="d-flex justify-content-center">    
+                    <a href="https://www.linkedin.com/in/anthonyzoss/" target="_blank" class="icon-circle linkedin light-gray-bg text-black"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/AnthonyxHD?tab=repositories" target="_blank" class="icon-circle github light-gray-bg text-black"><i class="bi bi-github"></i></a>
+                    <a href="mailto:anthonyzoss97@gmail.com" class="icon-circle email light-gray-bg text-black"><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- End Landing Page-->
+
+ <!-- Overview -->
+    <div class="sticky-container pt-5">
+     <!-- Section Title -->
+         <div class="container sticky-top dark-bg
+                    py-3">
+            <h2>OVERVIEW</h2>        
+        </div>
+     <!-- Overview Text -->
+        <div class="container pt-5">
+            <div class="rounded-4 overflow-hidden">
+                <!-- Thumbnail -->
+                <div>
+                    <img src="../assets/img/PacMan Battle Thumbnail.png"
+                    class="box-img box-img-sm w-100"
+                    alt="PacMan Battle Thumbnail">
+                </div>
+                <!-- Content -->
+                <div class="box-txt light-gray-bg
+                            p-3 p-lg-5">        
+                    <p>
+                        <span class="bold-txt">The Problem</span><br>
+                        Traditional Pac-Man is a single-player game, limiting opportunities for competitive 
+                        and cooperative gameplay.
+                    </p>
+                    <p>
+                        <span class="bold-txt">The Goal</span><br>
+                        Expand Pac-Man into a two-player experience while maintaining the classic feel and mechanics.
+                    </p>
+                    <p>
+                        <span class="bold-txt">My Role</span><br>
+                        I was responsible for game design and development, from ideation to prototyping and final 
+                        implementation, as part of a team of four
+                    </p>
+                    <p>
+                        <span class="bold-txt">The Setup</span><br>
+                        This group projext was part of the "Frontend Development" Module at the  University of 
+                        Applied Sciences Grisons. Over one year we learned programming principles and applied them
+                        directly to this game.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+ <!-- End Overview -->
+
+ <!-- Understanding the User -->
+    <div class="sticky-container pt-5">
+     <!-- Section Title -->
+        <div class="container sticky-top dark-bg
+                    py-3">
+            <h2>UNDERSTANDING THE USER</h2>        
+        </div>
+     <!-- Main Text -->
+        <div class="container pt-5">
+            <div class="box-txt text-white
+                        px-3 px-lg-5">
+             <!-- User Research-->
+                <h3>Competitive Audit</h3>
+                <p>
+                    To ensure PacMan Battle provided an engaging and competitive multiplayer experience, we 
+                    conducted a competitive audit, analyzing existing projects to understand what works and 
+                    what doesn’t. Our goal was to convert the iconic game into a multiplayer format while 
+                    staying true to its retro aesthetic and mechanics.
+                </p>
+             <!-- Limitations -->
+                <h3>Limitations</h3>
+                <p>
+                    To ensure PacMan Battle provided an engaging and competitive multiplayer experience, we 
+                    conducted a competitive audit, analyzing existing projects to understand what works and 
+                    what doesn’t. Our goal was to convert the iconic game into a multiplayer format while 
+                    staying true to its retro aesthetic and mechanics.
+                </p>
+             <!-- Persona-->
+                <h3>Persona</h3>
+                <p>
+                    Since extensive research already existed on Pac-Man’s target audience, we conducted a 
+                    secondary analysis to understand our potential users better. Based on the findings, we 
+                    developed an ad-hoc persona to capture our target group's needs and frustrations.
+                </p>
+                <img src="../assets/img/pacman battle/Persona Lukas Gartner.png"
+                class="w-100 modal-trigger"
+                alt="Persona Lukas and his characteristics">
+             <!-- Problem Statement -->
+                <h3>Point-of-View (PoV) statement</h3>
+                <div class="container box-txt dark-gray-bg rounded-4">
+                    <p class="py-4 mx-4">
+                        Lukas <span class="bold-txt">is</span> a retro game enthusiast,
+                        <span class="bold-txt">who needs </span> an engaging multiplayer experience of PacMan,
+                        <span class="bold-txt">because</span> it allows him to relive the nostalgia of the game while playing socially with friends.</p>
+                </div>
+            </div>   
+        </div>
+    </div>
+ <!-- End Understanding the User -->
+
+ <!-- Prototyping -->
+    <div class="sticky-container pt-5">
+     <!-- Section Title -->
+        <div class="container sticky-top dark-bg
+                    py-3">
+            <h2>PROTOTYPING</h2>        
+        </div>
+     
+        <div class="container pt-5">
+            <div class="box-txt text-white
+                        px-3 px-lg-5">
+             <!-- Sketching -->   
+                <h3>Sketching</h3>
+                <p>
+                    To explore different design concepts, we visualized the game layout through digital sketches. 
+                    Early iterations helped us quickly refine design choices before programming, ensuring that we
+                    can set the focus on JavaScript which was the main part of this module.
+                </p>
+                 <!-- Carousel -->
+                <div class="position-relative method-carousel">
+                    <!-- Left Arrow -->
+                    <button class="method-arrow arrow-left d-none" id="prevBtn" aria-label="Previous">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <!-- Images -->
+                    <div class="method-viewport">
+                        <div class="method-gallery" id="track">
+                            <img src="../assets/img/pacman battle/Sketch 1.png" class="w-100 modal-trigger" alt="Digital sketch of PacMan Battle">
+                            <img src="../assets/img/pacman battle/Sketch 2.png" class="w-100 modal-trigger" alt="Digital sketch of PacMan Battle">
+                            <img src="../assets/img/pacman battle/Sketch 3.png" class="w-100 modal-trigger" alt="Digital sketch of PacMan Battle">
+                            <img src="../assets/img/pacman battle/Sketch 4.png" class="w-100 modal-trigger" alt="Digital sketch of PacMan Battle">
+                            <img src="../assets/img/pacman battle/Sketch 5.png" class="w-100 modal-trigger" alt="Digital sketch of PacMan Battle">
+                        </div>
+                    </div>
+                    <!-- Right arrow -->
+                    <button class="method-arrow arrow-right" id="nextBtn" aria-label="Next">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>           
+             <!-- Usability Test --> 
+                <h3>Usability Test</h3>
+                
+                <p>
+                    Once our initial game layout was in place, we conducted usability testing to validate our 
+                    design decisions and test the functionality of our code.
+                </p>
+                <img src="../assets/img/pacman battle/PacMan Battle Prototype.png"
+                class="w-100 modal-trigger"
+                alt="A prototype of PacMan Battle">                    
+                <p>
+                    The usability test involved a live demonstration of the prototype to a group of 11 participants. 
+                    They could play freely and explore the mechanics naturally. We observed this real-world user 
+                    interactions and conducted interviews to identify areas for improvement:
+                </p>
+             <!-- Improvements -->
+                <h3>Improvements</h3>
+             <!-- Small Screens-->
+                <div class="row d-lg-none">
+                    <div class="row">
+                        <!-- Painpoint 1 -->
+                        <div class="col-2"><i class="bi bi-1-circle-fill painpoint"></i></div>
+                        <div class="col-10">
+                            <p class="mb-3">
+                                <span class="bold-txt">Tunnel Mechanic:</span><br>
+                                Removed due to a bug where characters could escape the game area
+                            </p>
+                        </div>
+                        <!-- Painpoint 2 -->
+                        <div class="col-2"><i class="bi bi-2-circle-fill painpoint"></i></div>
+                        <div class="col-10">
+                            <p class="mb-3">
+                                <span class="bold-txt">Scoring System:</span><br>
+                                Adjusted points to create a fairer competitive game
+                            </p>
+                        </div>
+                        <!-- Painpoint 3 -->
+                        <div class="col-2"><i class="bi bi-3-circle-fill painpoint"></i></div>
+                        <div class="col-10">
+                            <p class="mb-3">
+                                <span class="bold-txt">Local Score Storage:</span><br>
+                                Added a local storage to see how the user compared to previous scores
+                            </p>
+                        </div>
+                        <!-- Painpoint 4 -->
+                        <div class="col-2"><i class="bi bi-4-circle-fill painpoint"></i></div>
+                        <div class="col-10">
+                            <p>
+                                <span class="bold-txt">Interactive Quiz:</span><br>
+                                Introduced a Pac-Man-themed quiz to maintain engagement
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Large Screens Layout -->
+                <div class="row d-none d-lg-flex text-center">
+                    <!-- Icons -->
+                    <div class="col-3 mb-3"><i class="bi bi-1-circle-fill painpoint"></i></div>
+                    <div class="col-3 mb-3"><i class="bi bi-2-circle-fill painpoint"></i></div>
+                    <div class="col-3 mb-3"><i class="bi bi-3-circle-fill painpoint"></i></div>
+                    <div class="col-3 mb-3"><i class="bi bi-4-circle-fill painpoint"></i></div>
+                    <!-- Text -->
+                    <!-- Painpoint 1 -->
+                    <div class="col-3">
+                        <p>
+                            <span class="bold-txt">Tunnel Mechanic:</span><br>
+                            Removed due to a bug where characters could escape the game area
+                        </p>
+                    </div>
+                    <!-- Painpoint 2 -->
+                    <div class="col-3">
+                        <p>
+                            <span class="bold-txt">Scoring System:</span><br>
+                            Adjusted points to create a fairer competitive game
+                        </p>
+                    </div>
+                    <!-- Painpoint 3 -->
+                    <div class="col-3">
+                        <p>
+                            <span class="bold-txt">Local Score Storage:</span><br>
+                            Added a local storage to see how the user compared to previous scores
+                        </p>
+                    </div>
+                    <!-- Painpoint 4 -->
+                    <div class="col-3">
+                        <p>
+                            <span class="bold-txt">Interactive Quiz:</span><br>
+                            Introduced a Pac-Man-themed quiz to maintain engagement
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- End Prototyping -->
+
+ <!-- Implementation -->
+    <div class="sticky-container pt-5">
+     <!-- Section Title -->
+        <div class="container sticky-top dark-bg
+                    py-3">
+            <h2>IMPLEMENTATION</h2>        
+        </div>
+    <!-- Main Text -->
+        <div class="container pt-5">
+            <div class="box-txt text-white
+                        px-3 px-lg-5">
+                <img src="../assets/img/pacman battle/PacMan Home.jpeg"
+                class="w-100 modal-trigger"
+                alt="PacMan Battle Home Screen">
+                <div class="d-flex justify-content-center">
+                    <a href="https://anthonyxhd.github.io/pac-man/" class="call-to-action text-white">Play PacMan Battle</a> 
+                </div>   
+                <h3>Gameplay</h3>
+                <!-- Carousel -->
+                <div class="position-relative method-carousel">
+                    <!-- Left Arrow -->
+                    <button class="method-arrow arrow-left d-none" id="prevBtn" aria-label="Previous">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <!-- Images -->
+                    <div class="method-viewport">
+                        <div class="method-gallery" id="track">
+                            <img src="../assets/img/pacman battle/PacMan start game.jpeg" class="w-100 modal-trigger rounded-4" alt="Start PacMan Battle game screen">
+                            <img src="../assets/img/pacman battle/PacMan enter name.jpeg" class="w-100 modal-trigger rounded-4" alt="Enter name screen">
+                            <img src="../assets/img/pacman battle/PacMan Gameplay.jpeg" class="w-100 modal-trigger rounded-4" alt="Gameplay screen">
+                        </div>
+                    </div>
+                    <!-- Right arrow -->
+                    <button class="method-arrow arrow-right" id="nextBtn" aria-label="Next">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div> 
+                <h3>Quiz</h3>
+                <!-- Carousel -->
+                <div class="position-relative method-carousel">
+                    <!-- Left Arrow -->
+                    <button class="method-arrow arrow-left d-none" id="prevBtn" aria-label="Previous">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <!-- Images -->
+                    <div class="method-viewport">
+                        <div class="method-gallery" id="track">
+                            <img src="../assets/img/pacman battle/PacMan Quiz.jpeg" class="w-100 modal-trigger rounded-4" alt="PacMan Battle Quiz starting screen">
+                            <img src="../assets/img/pacman battle/PacMan Quiz Questions.jpeg" class="w-100 modal-trigger rounded-4" alt="PacMan Battle Quiz questions screen">
+                            <img src="../assets/img/pacman battle/PacMan Quiz DragDrop.jpeg" class="w-100 modal-trigger rounded-4" alt="Drag and Drop Quiz screen">
+                        </div>
+                    </div>
+                    <!-- Right arrow -->
+                    <button class="method-arrow arrow-right" id="nextBtn" aria-label="Next">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div> 
+             <!-- Code Preview -->
+                <h3>Code</h3>
+                <p>
+                    The game board is built using a grid-based system, where each tile represents different 
+                    objects in an array.
+                </p>
+                <div class="code-card">
+                    <pre><code>
+// Map Example
+const map = [
+    ['1','a','a','2'],  // Walls = a / Corners = Numbers
+    ['b','.','.','b'],  // Pellets = . / Vertical Walls = b
+    ['b','p','p','b'],  // Power‑ups = p
+    ['4','a','a','3']   // Walls = a / Corners = Numbers
+];</code></pre>
+                </div>
+                <div class="code-card">
+                    <pre><code>
+// Dynamic Generation
+function generateMap () {
+    map.forEach((row, i) => { 
+        row.forEach((symbol, j) => { 
+            if (symbol === '.') {
+                pellets.push(new Pellet({ position: { x: j * 32, y: i * 32 }}));
+            } else if (symbol === 'p') {
+                powerUps.push(new PowerUp({ position: { x: j * 32, y: i * 32 }}));
+            } else {
+                boundaries.push(new Boundary({ position: { x: j * 32, y: i * 32 }}));
+            }
+        });
+    });
+}</code></pre>
+                </div>
+                <p>
+                    Pac-Man's movement follows a collision-based system. To avoid conflicts with webpage 
+                    functions, only W, A, S, D keys were assigned for player controls.
+                </p>
+                <div class="code-card">
+                    <pre><code>
+// Player Movement
+document.addEventListener("keydown", (event) => {
+    switch (event.key) {
+        case 'ArrowUp': player.velocity.y = -3; break;
+        case 'ArrowDown': player.velocity.y = 3; break;
+        case 'ArrowLeft': player.velocity.x = -3; break;
+        case 'ArrowRight': player.velocity.x = 3; break;
+    }
+});</code></pre>
+                </div>
+                <div class="code-card">
+                    <pre><code>
+// Collision Detection
+boundaries.forEach((boundary) => {
+    if (circleCollidesWithRectangle({ circle: player, rectangle: boundary })) {
+        player.velocity.x = 0;
+        player.velocity.y = 0;
+    }
+});</code></pre>
+                </div>
+                <p>
+                    The ghosts navigate randomly while avoiding walls. At the same time, the AI adjusts 
+                    movement based on available paths.
+                </p>
+                <div class="code-card">
+                    <pre><code>
+// Ghosts Movement
+const possibleDirections = ['up', 'down', 'left', 'right'];
+const randomDirection = possibleDirections[Math.floor(Math.random() * possibleDirections.length)];
+switch (randomDirection) {
+    case 'up': ghost.velocity.y = -3; break;
+    case 'down': ghost.velocity.y = 3; break;
+    case 'left': ghost.velocity.x = -3; break;
+    case 'right': ghost.velocity.x = 3; break;
+}</code></pre>
+                </div>
+                <div class="code-card">
+                    <pre><code>
+// Ghosts Change Behavior
+ghosts.forEach(ghost => {
+    ghost.scared = true;
+    setTimeout(() => ghost.scared = false, 5000);
+});</code></pre>
+                </div>
+                <p>
+                    Multiplayer turn system
+                </p>
+                <div class="code-card">
+                    <pre><code>
+// Round Timer
+var timeLeft = 20;
+var timerId = setInterval(() => {
+    timeLeft--;
+    if (timeLeft === 0) {
+        clearTimeout(timerId);
+        switchTurn();
+    }
+}, 1000);</code></pre>
+                </div>
+                <div class="code-card">
+                    <pre><code>
+// Switch Turn
+function switchTurn() {
+    currentPlayer = currentPlayer === 1 ? 2 : 1;
+    resetPlayerPosition();
+}</code></pre>
+                </div>
+                <p>
+                    Scoring System and Power-Ups
+                </p>
+                <div class="code-card">
+                    <pre><code>
+// Power-Up Collision Effect
+if (circleCollidesWithRectangle({ circle: player, rectangle: pellet })) {
+    pellets.splice(i, 1); // Remove pellet
+    score += 10; // Increase score
+}</code></pre>
+                </div>
+                <div class="code-card">
+                    <pre><code>
+// Power to Eat Ghosts
+if (circleCollidesWithRectangle({ circle: player, rectangle: powerUp })) {
+    powerUps.splice(i, 1);
+    ghosts.forEach(ghost => ghost.scared = true);
+}</code></pre>
+                </div>
+
+            </div>
+        </div>
+    </div>
+  <!-- End Refining the Desing -->
+
+ <!-- Modal -->
+    <div id="myModal" class="modal">
+        <!-- Close Button -->
+        <span class="close">&times;</span>
+        <!-- Modal Content -->
+        <img class="modal-content" id="img01">
+    </div>
+ <!-- End Modal -->
+
+ <!-- Footer -->
+    <div class="sticky-container light-gray-bg py-5 mt-5 z-3">
+        <div class="container box-txt">
+            <h2 class="align-self-center text-black">Let's work together!</h2>
+            <p class="text-center align-self-center">For any inquiries, collaborations, or just to say hello. I would love to hear from you!</p>
+            <div class="align-self-center">    
+                <a href="https://www.linkedin.com/in/anthonyzoss/" target="_blank" class="icon-circle linkedin dark-gray-bg text-white"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/AnthonyxHD?tab=repositories" target="_blank" class="icon-circle github dark-gray-bg text-white"><i class="bi bi-github"></i></a>
+                <a href="mailto:anthonyzoss97@gmail.com" class="icon-circle email dark-gray-bg text-white"><i class="bi bi-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Disclaimer -->
+    <div class="sticky-container dark-bg py-3 z-3">
+        <p class="micro-txt text-white text-center">© 2025 Anthony Zoss. All rights reserved.</p>
+    </div>
+ <!-- End Footer -->
+
+
+ <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/modal-img.js"></script>
+    <script src="../scripts/carousel.js"></script>
+</body>
+</html>

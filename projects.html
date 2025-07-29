@@ -1,214 +1,303 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home - Anthony Zoss</title>
+    <meta charset="UTF-8" />
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Match Psysical Screen Width -->
+    <title>Projects Portfolio</title>
 
-    <!-- Stylesheets -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="assets/stylesheet/animation.css" />
+    <link rel="stylesheet" href="assets/stylesheet/style.css" />
 </head>
 
 <body>
-<!-- LANDING PAGE -->
-    <div class="d-flex flex-column vh-100 w-100 dark-bg ">
-        <!-- Navigation-->
-        <nav class="navbar navbar-dark navbar-expand-sm py-sm-3 px-sm-5 pt-4 pb-3 px-3">
+ <!-- Landing Page -->
+    <div class="d-flex flex-column min-vh-100 w-100">
+     <!-- Navigation -->
+        <nav class="nav-bg navbar navbar-dark navbar-expand-md nav-bg
+                    p-3 py-sm-4 px-sm-5">
             <div class="container-fluid">
-
-                <a class="navbar-brand" href="#"><img src="img/Anthony_Zoss.svg" alt="Anthony Zoss's Logo"></a>
-                
+                <!-- Brand Logo -->
+                <a class="brand" href="index.html"><img src="assets/img/Brand.svg" alt="Branding of Anthony Zoss"></a>
+                <!-- Hamburger Button when Small -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- Subpages -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item pe-sm-3"><a class="nav-link" href="index.html">HOME</a></li>
                         <li class="nav-item pe-sm-3"><a class="nav-link" href="#">PROJECTS</a></li>
+                        <li class="nav-item pe-sm-3"><a class="nav-link" href="gallery.html">GALLERY</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-
-        <!-- Visuals -->
-        <div class="d-flex flex-column align-items-center flex-grow-1 p-sm-0 justify-content-sm-center pt-5">
-            <h1 class="fly-in-left">WEB &AMP; USABILITY</h1>
-            <h1 class="fly-in-right">ENGINEER</h1>
-            <img src="img/Landing-Page.png" alt="Anthony illustrated" class="landing-img-home">
+     <!-- Visuals -->
+        <div class="d-flex flex-column align-items-center justify-content-center flex-grow-1
+                    pt-5">
+            <h1 class="fly-in-left">PROJECTS</h1>
+            <img src="assets/img/projects/Projects Header.png" class="landing-img landing-web landing-img-animation"
+            alt="Illustration of Anthony creating something on the Computer">
         </div>
-
-        <!-- Bottom Section -->
-        <div class="start-0 end-0 bottom-0 d-flex align-items-center justify-content-between pb-2 px-3 py-sm-0 px-sm-5">
-            <div></div><!-- Placeholder -->
-            <!-- Icons -->
+     <!-- Contact -->
+        <div class="fixed-element z-2
+                    pb-4 px-sm-5">
             <div>
-                <div class="text-sm mb-2 text-center light-gray-font">CONTACT ME</div>
-                <div class="d-flex justify-content-center mb-sm-4">    
-                    <!-- LinkedIn -->
-                    <a href="https://www.linkedin.com/in/anthonyzoss/" target="_blank" class="icon-circle linkedin"><i class="bi bi-linkedin"></i></a>
-                    <!-- Github -->
-                    <a href="https://github.com/AnthonyxHD?tab=repositories" target="_blank" class="icon-circle github"><i class="bi bi-github"></i></a>
-                    <!-- E-Mail -->
-                    <a href="mailto:anthonyzoss97@gmail.com" class="icon-circle email"><i class="bi bi-envelope"></i></a>
+                <div class="micro-txt light-gray-txt text-center pb-2">CONTACT</div>
+                <div class="d-flex justify-content-center">    
+                    <a href="https://www.linkedin.com/in/anthonyzoss/" target="_blank" class="icon-circle linkedin light-gray-bg text-black"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/AnthonyxHD?tab=repositories" target="_blank" class="icon-circle github light-gray-bg text-black"><i class="bi bi-github"></i></a>
+                    <a href="mailto:anthonyzoss97@gmail.com" class="icon-circle email light-gray-bg text-black"><i class="bi bi-envelope"></i></a>
                 </div>
             </div>
         </div>
     </div>
+ <!-- End Landing Page-->
 
-    <div class="accent mb-5"></div>
+ <!-- All Projects -->
+    <div class="sticky-container pt-5">
+        <div class="container sticky-top dark-bg
+                    py-3">
+            <h2>ALL PROJECTS</h2>
+        </div>
 
-
-    <script src="script.js"></script>
-
-    <div class="sticky-container">
-        <div class="sticky-top">
-            <div class="py-3">
-                <h2>PROJECTS</h2>
-            </div>
-        </div>    
-
-
-        <!-- Highlight 1 -->
-        <div class="sticky-top highlight-1 mt-5">
-            <div class="container g-0">
-                <div class="row highlight fixed-height g-0">
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-7">
-                        <img src="img/Studienwahl_Thumbnail.jpg" alt="Studienwahl Thumbnail" class="highlight-full-img">
+     <!-- Big Screens -->
+        <div class="d-none d-lg-flex py-5">
+            <div class="container">
+             <!-- Row 1 -->
+                <div class="all-projects-row">
+                 <!-- Project 1 -->
+                    <div class="all-projects-container">
+                     <!-- Image -->
+                        <img src="assets/img/Little Wins Thumbnail.png"
+                        class="all-projects-img"
+                        alt="Little Wins Thumbnail">
+                     <!-- Content -->
+                        <a href="projects/little-wins.html" style="text-decoration: none;">
+                            <div class="middle dark-gray-bg">
+                                <h3 class="text-white">Little Wins</h3> 
+                                <div class="pt-3">
+                                    <span class="tag micro-txt text-black light-gray-bg me-1">app design</span>
+                                    <span class="tag micro-txt text-black light-gray-bg">ui</span>
+                                </div> 
+                                <p class="text-white pt-3">
+                                    Helping people gently rebuild their daily structure. Little Wins is a to-do 
+                                    app concept designed to offer a calm way to ease back into productivity 
+                                    without pressure.
+                                </p>
+                            </div>
+                        </a> 
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-5 light-gray-bg">
-                        <div class="highlight-text">
+                 <!-- Project 2-->
+                    <div class="all-projects-container">
+                     <!-- Image -->
+                        <img src="assets/img/Studienwahl Thumbnail.png"
+                        class="all-projects-img"
+                        alt="Studienwahl Thumbnail">
+                     <!-- Content -->
+                        <a href="projects/studienwahl.html" style="text-decoration: none;">       
+                            <div class="middle light-gray-bg">                                
+                                <h3 class="text-black">Studienwahl</h3> 
+                                <div class="pt-3">
+                                    <span class="tag micro-txt text-white dark-gray-bg me-1">usability study</span>
+                                    <span class="tag micro-txt text-white dark-gray-bg">ux</span>
+                                </div> 
+                                <p class="text-black pt-3">
+                                    Enhancing Studienwahl (cantonals study choice portal) by optimizing usability, 
+                                    event discovery, and filtering to help future students find the right path.
+                                </p>                
+                            </div> 
+                        </a>
+                    </div>
+                </div>
+
+             <!-- Row 2 -->
+                <div class="all-projects-row pt-5">
+                 <!-- Project 3 -->
+                    <div class="all-projects-container">
+                     <!-- Image -->
+                        <img src="assets/img/PacMan Battle Thumbnail.png"
+                        class="all-projects-img"
+                        alt="PacMan Battle Thumbnail">
+                     <!-- Content -->
+                        <a href="projects/pacman-battle.html" style="text-decoration: none;">
+                            <div class="middle light-gray-bg">
+                                <h3 class="text-black">PacMan Battle</h3> 
+                                <div class="pt-3">
+                                    <span class="tag micro-txt text-white dark-gray-bg me-1">frontend dev</span>
+                                    <span class="tag micro-txt text-white dark-gray-bg">ui</span>
+                                </div> 
+                                <p class="text-black pt-3">
+                                    A classic game with a twist. Transforming the iconic PacMan game into an 
+                                    exciting multiplayer web experience.
+                                </p>
+                            </div>
+                        </a> 
+                    </div>
+                 <!-- Project 4 -->
+                    <div class="all-projects-container">
+                     <!-- Image -->
+                        <img src="assets/img/ByteMentor Thumbnail.png"
+                        class="all-projects-img"
+                        alt="ByteMentor Thumbnail">
+                     <!-- Content -->
+                        <a href="projects/bytementor.html" style="text-decoration: none;">       
+                            <div class="middle dark-gray-bg">                                
+                                <h3 class="text-white">ByteMentor</h3> 
+                                <div class="pt-3">
+                                    <span class="tag micro-txt text-black light-gray-bg me-1">app design</span>
+                                    <span class="tag micro-txt text-black light-gray-bg">ui</span>
+                                </div> 
+                                <p class="text-white pt-3">
+                                    Making career exploration easier and more engaging. ByteMentor is an app 
+                                    concept to guide young people in discovering the right path in the IT sector.
+                                </p>                
+                            </div> 
+                        </a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+     <!-- End Big Screens -->
+
+     <!-- Small Screens -->
+        <div class="d-lg-none py-5">
+            <!-- Project 1-->
+            <div class="container">
+                <div class="rounded-4 overflow-hidden">
+                    <div class="row g-0 align-items-stretch project-box dark-gray-bg">
+                        <!-- Thumbnail -->
+                        <div class="col-12">
+                            <img src="assets/img/Little Wins Thumbnail.png" 
+                            class="img-fluid w-100 box-img box-img-lg"
+                            alt="Little Wins Thumbnail">
+                        </div>
+                        <!-- Content -->
+                        <div class="col-12 box-txt p-3">
+                            <h3 class="text-white">Little Wins</h3>
+                            <div>
+                                <span class="tag micro-txt light-gray-bg me-1">app design</span>
+                                <span class="tag micro-txt light-gray-bg">ui</span>
+                            </div>
+                            <p class="text-white">
+                                Helping people gently rebuild their daily structure. Little Wins is a to-do 
+                                app concept designed to offer a calm way to ease back into productivity 
+                                without pressure.
+                            </p>
+                            <a href="projects/little-wins.html" class="btn micro-txt light-gray-bg">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="container pt-5">
+                <div class="rounded-4 overflow-hidden">
+                    <div class="row g-0 align-items-stretch project-box light-gray-bg">
+                        <!-- Thumbnail -->
+                        <div class="col-12">
+                            <img src="assets/img/Studienwahl Thumbnail.png" 
+                            class="img-fluid w-100 box-img box-img-lg"
+                            alt="Studienwahl Thumbnail">
+                        </div>
+                        <!-- Content -->
+                        <div class="col-12 box-txt p-3">
                             <h3>Studienwahl</h3>
-                            <div class="mb-2">
-                                <span class="highlight-keyword gray-bg text-white">web design</span>
-                                <span class="highlight-keyword gray-bg text-white">usability test</span>
-                                <span class="highlight-keyword gray-bg text-white">ux</span>
+                            <div>
+                                <span class="tag micro-txt text-white dark-gray-bg me-1">usability study</span>
+                                <span class="tag micro-txt text-white dark-gray-bg">ux</span>
                             </div>
                             <p>
-                                Enhancing Studienwahl (cantonals study choice portal) by optimizing usability, event discovery, 
-                                and filtering to help future students find the right path.
+                                Enhancing Studienwahl (cantonals study choice portal) by optimizing usability, 
+                                event discovery, and filtering to help future students find the right path.
                             </p>
-                            <a href="projects/studienwahl.html" class="btn gray-bg text-white">Learn more</a>
+                            <a href="projects/studienwahl.html" class="btn micro-txt text-white dark-gray-bg">Learn more</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-
-        <!-- Highlight 2 -->
-        <div class="sticky-top highlight-2 mt-5">
-            <div class="container g-0">
-                <div class="row highlight fixed-height g-0">
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-7">
-                        <img src="img/ByteMentor_Thumbnail.png" alt="ByteMentor Thumbnail" class="highlight-full-img">
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-5 gray-bg">
-                        <div class="highlight-text">
-                            
-                            <h3 class="light-gray-font">ByteMentor</h3>
-
-                            <div class="mb-2">
-                                <span class="highlight-keyword light-gray-bg">app design</span>
-                                <span class="highlight-keyword light-gray-bg">design thinking</span>
-                                <span class="highlight-keyword light-gray-bg">ui</span>
+         <!-- Project 3 -->
+            <div class="container pt-5">
+                <div class="rounded-4 overflow-hidden">
+                    <div class="row g-0 align-items-stretch project-box dark-gray-bg">
+                        <!-- Thumbnail -->
+                        <div class="col-12">
+                            <img src="assets/img/ByteMentor Thumbnail.png" 
+                            class="img-fluid w-100 box-img box-img-lg"
+                            alt="ByteMentor Thumbnail">
+                        </div>
+                        <!-- Content -->
+                        <div class="col-12 box-txt p-3">
+                            <h3 class="text-white">ByteMentor</h3>
+                            <div>
+                                <span class="tag micro-txt light-gray-bg me-1">app design</span>
+                                <span class="tag micro-txt light-gray-bg">ui</span>
                             </div>
-
-
-                            <p class="light-gray-font">
-                                Making career exploration easier and more engaging. ByteMentor is an app concept 
-                                to guide young people in discovering the right path in the IT sector.
+                            <p class="text-white">
+                                Making career exploration easier and more engaging. ByteMentor is an app 
+                                concept to guide young people in discovering the right path in the IT sector.
                             </p>
-                            <a href="projects/bytementor.html" class="btn light-gray-bg">Learn more</a>
+                            <a href="projects/bytementor.html" class="btn micro-txt light-gray-bg">Learn more</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Highlight 3 -->
-        <div class="sticky-top highlight-3 mt-5">
-            <div class="container g-0">
-                <div class="row highlight fixed-height g-0">
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-7">
-                        <img src="img/Pac-Man-Battle_Thumbnail.png" alt="PacMan Battle Thumbnail" class="highlight-full-img">
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-5 light-gray-bg">
-                        <div class="highlight-text">
-                            
+         <!-- Project 4 -->
+            <div class="container pt-5">
+                <div class="rounded-4 overflow-hidden">
+                    <div class="row g-0 align-items-stretch project-box light-gray-bg">
+                        <!-- Thumbnail -->
+                        <div class="col-12">
+                            <img src="assets/img/PacMan Battle Thumbnail.png" 
+                            class="img-fluid w-100 box-img box-img-lg"
+                            alt="PacMan Battle Thumbnail">
+                        </div>
+                        <!-- Content -->
+                        <div class="col-12 box-txt p-3">
                             <h3>PacMan Battle</h3>
-                            <div class="mb-2">
-                                <span class="highlight-keyword gray-bg text-white">web design</span>
-                                <span class="highlight-keyword gray-bg text-white">frontend</span>
-                                <span class="highlight-keyword gray-bg text-white">ui</span>
+                            <div>
+                                <span class="tag micro-txt text-white dark-gray-bg me-1">frontend dev</span>
+                                <span class="tag micro-txt text-white dark-gray-bg">ui</span>
                             </div>
                             <p>
-                                A classic game with a twist.
-                                Transforming the iconic PacMan game into an exciting multiplayer web experience.
+                                A classic game with a twist. Transforming the iconic PacMan game into an 
+                                exciting multiplayer web experience.
                             </p>
-                            <div class="d-flex justify-content-end">
-                                <a href="projects/pacman.html" class="btn gray-bg text-white">Learn more</a>
-                            </div>
-                            
+                            <a href="projects/pacman-battle.html" class="btn micro-txt text-white dark-gray-bg">Learn more</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+     <!-- End Small Screens -->
+    </div>
+ <!-- End All Projects -->
 
-
-
-        <!-- Highlight 4 -->
-        <div class="sticky-top my-5">
-            <div class="container g-0">
-                <div class="row highlight fixed-height g-0">
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-7">
-                        <img src="img/Livique_Thumbnail.png" alt="Livique Thumbnail" class="highlight-full-img">
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-5 gray-bg">
-                        <div class="highlight-text">
-                            <h3 class="light-gray-font">Livique</h3>
-                            <div class="mb-2">
-                                <span class="highlight-keyword light-gray-bg">research</span>
-                                <span class="highlight-keyword light-gray-bg">usability test</span>
-                                <span class="highlight-keyword light-gray-bg">ux</span>
-                            </div>
-                            <p class="light-gray-font">
-                                Redefining the online furniture shopping experience for Livique by making browsing,
-                                selecting, and purchasing effortless and enjoyable.
-                            </p>
-                            <a href="projects/livique.html" class="btn light-gray-bg">Learn more</a>
-                        </div>
-                    </div>
-                </div>
+ <!-- Footer -->
+    <div class="sticky-container light-gray-bg py-5 z-3">
+        <div class="container box-txt">
+            <h2 class="align-self-center text-black">Let's work together!</h2>
+            <p class="text-center align-self-center">For any inquiries, collaborations, or just to say hello. I would love to hear from you!</p>
+            <div class="align-self-center">    
+                <a href="https://www.linkedin.com/in/anthonyzoss/" target="_blank" class="icon-circle linkedin dark-gray-bg text-white"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/AnthonyxHD?tab=repositories" target="_blank" class="icon-circle github dark-gray-bg text-white"><i class="bi bi-github"></i></a>
+                <a href="mailto:anthonyzoss97@gmail.com" class="icon-circle email dark-gray-bg text-white"><i class="bi bi-envelope"></i></a>
             </div>
         </div>
     </div>
-
-<!-- FOOTER -->
-
-<div class="light-gray-bg mt-5 pb-5 footer-image">
-    <div class="container pt-5 text-center">
-        <h3>Let's work together!</h3>
-        <p class="pt-3">
-            For any inquiries, collaborations, or just to say hello. <br> 
-            I'd love to hear from you!
-        </p>
-        <p class="pt-1">Reach out and let's connect.</p>
-        <a href="mailto:anthonyzoss97@gmail.com" class="text-decoration-none mail black-font">anthonyzoss97@gmail.com</a>
+    <!-- Disclaimer -->
+    <div class="sticky-container dark-bg py-3 z-3">
+        <p class="micro-txt text-white text-center">© 2025 Anthony Zoss. All rights reserved.</p>
     </div>
-</div>
-<!-- IMPRESSUM -->
-    <div class="text-white pt-3 pb-3">
-        <div class="container text-center text-sm">
-            © 2025 Anthony Zoss. All rights reserved.
-        </div>
-    </div>
+ <!-- End Footer -->
 
-<!-- SCRIPTS -->
+
+ <!-- SCRIPTS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
