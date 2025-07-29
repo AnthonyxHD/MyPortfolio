@@ -1,272 +1,325 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Studienwahl</title>
+    <meta charset="UTF-8" />
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Match Psysical Screen Width -->
+    <title>Studienwahl Portfolio</title>
 
-    <!-- Stylesheets -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../style.css">
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
-
-
+    <link rel="stylesheet" href="../assets/stylesheet/animation.css" />
+    <link rel="stylesheet" href="../assets/stylesheet/style.css" />
 </head>
 
 <body>
-<!-- LANDING PAGE -->
-    <div class="d-flex flex-column vh-100 w-100 dark-bg ">
-    <!-- Navigation-->
-    <nav class="navbar navbar-dark navbar-expand-sm py-sm-3 px-sm-5 pt-4 pb-3 px-3">
-        <div class="container-fluid">
-
-            <a class="navbar-brand" href="../index.html"><img src="../img/Anthony_Zoss.svg" alt="Anthony Zoss's Logo"></a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item pe-sm-3"><a class="nav-link" href="../index.html">HOME</a></li>
-                    <li class="nav-item dropdown pe-sm-3 position-relative">
-                        <a class="nav-link dropdown-toggle" href="#" id="workDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            PROJECTS
-                        </a>
-                        <ul class="dropdown-menu position-absolute mt-0" aria-labelledby="workDropdown" style="top: 100%; left: 0;">
-                            <li><a class="nav-link" href="../projects/todo.html">LITTLE WINS</a></li>
-                            <li><a class="nav-link" href="#">STUDIENWAHL</a></li>
-                            <li><a class="nav-link" href="../projects/bytementor.html">BYTEMENTOR</a></li>
-                            <li><a class="nav-link" href="../projects/pacman.html">PACMAN BATTLE</a></li>                            
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="../about.html">ABOUT</a></li>
-                </ul>
+ <!-- Landing Page -->
+    <div class="d-flex flex-column min-vh-100 w-100">
+     <!-- Navigation -->
+        <nav class="nav-bg navbar navbar-dark navbar-expand-md nav-bg
+                    p-3 py-sm-4 px-sm-5">
+            <div class="container-fluid">
+                <!-- Brand Logo -->
+                <a class="brand" href="../index.html"><img src="../assets/img/Brand.svg" alt="Branding of Anthony Zoss"></a>
+                <!-- Hamburger Button when Small -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Subpages -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item pe-sm-3"><a class="nav-link" href="../index.html">HOME</a></li>
+                        <li class="nav-item pe-sm-3"><a class="nav-link" href="../projects.html">PROJECTS</a></li>
+                        <li class="nav-item pe-sm-3"><a class="nav-link" href="../gallery.html">GALLERY</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../about.html">ABOUT</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-        <!-- Visuals -->
-        <div class="d-flex flex-column align-items-center flex-grow-1 p-sm-0 justify-content-sm-center pt-5">
+        </nav>
+     <!-- Visuals -->
+        <div class="d-flex flex-column align-items-center justify-content-center flex-grow-1
+                    pt-5">
             <h1 class="fly-in-left">STUDIENWAHL</h1>
-            <img src="../img/studienwahl/studienwahl-landing.png" alt="Three Screens showing the Studienwahl Website" class="landing-img-pacman">
+            <img src="../assets/img/studienwahl/Studienwahl Header.png" class="landing-img landing-web landing-img-animation"
+            alt="Desktop screen of the Studienwahlportal">
         </div>
-
-        <!-- BOTTOM SECTION -->
-        <div class="start-0 end-0 bottom-0 d-flex align-items-center justify-content-between pb-2 px-3 py-sm-0 px-sm-5">
-            <div></div><!-- Placeholder -->
-            <!-- Icons -->
+     <!-- Contact -->
+        <div class="fixed-element z-2
+                    pb-4 px-sm-5">
             <div>
-                <div class="text-sm mb-2 text-center light-gray-font">CONTACT</div>
-                <div class="d-flex justify-content-center mb-sm-4">    
-                    <!-- LinkedIn -->
-                    <a href="https://www.linkedin.com/in/anthonyzoss/" target="_blank" class="icon-circle linkedin"><i class="bi bi-linkedin"></i></a>
-                    <!-- Github -->
-                    <a href="https://github.com/AnthonyxHD?tab=repositories" target="_blank" class="icon-circle github"><i class="bi bi-github"></i></a>
-                    <!-- E-Mail -->
-                    <a href="mailto:anthonyzoss97@gmail.com" class="icon-circle email"><i class="bi bi-envelope"></i></a>
+                <div class="micro-txt light-gray-txt text-center pb-2">CONTACT</div>
+                <div class="d-flex justify-content-center">    
+                    <a href="https://www.linkedin.com/in/anthonyzoss/" target="_blank" class="icon-circle linkedin light-gray-bg text-black"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/AnthonyxHD?tab=repositories" target="_blank" class="icon-circle github light-gray-bg text-black"><i class="bi bi-github"></i></a>
+                    <a href="mailto:anthonyzoss97@gmail.com" class="icon-circle email light-gray-bg text-black"><i class="bi bi-envelope"></i></a>
                 </div>
             </div>
         </div>
     </div>
+ <!-- End Landing Page-->
 
-    <div class="accent mb-5"></div>
-
-
-    <script src="../script.js"></script>
-
-<!-- OVERVIEW -->
-    <div class="sticky-container">
-        <!-- Title -->
-        <div class="sticky-top dark-bg" stlye="z-index: 9999;">
-                <h2 class="py-3">OVERVIEW</h2>
+ <!-- Overview -->
+    <div class="sticky-container pt-5">
+     <!-- Section Title -->
+         <div class="container sticky-top dark-bg
+                    py-3">
+            <h2>OVERVIEW</h2>        
         </div>
-        <!-- Content -->
-        <div class="container py-sm-5 py-4 g-0">
-            
-         <!-- Overview Card -->
-            <div class="row highlight g-0">
-                <div class="col-12 fixed-height">
-                    <img src="../img/Studienwahl_Thumbnail.jpg" alt="Studienwahl Thumbnail" class="highlight-full-img">
+     <!-- Overview Text -->
+        <div class="container pt-5">
+            <div class="rounded-4 overflow-hidden">
+                <!-- Thumbnail -->
+                <div>
+                    <img src="../assets/img/Studienwahl Thumbnail.png"
+                    class="box-img box-img-sm w-100"
+                    alt="Studienwahl Thumbnail">
                 </div>
-                <div class="col-12 highlight-text light-gray-bg">
-                    <!-- The Product -->
-                    <p>The Product<br>
-                        <span class="gray-font">
-                        Studienwahl (study choice portal) is an online platform that helps prospective students explore and choose the
-                        right study program in Zurich or the neighboring cantons.</span></p>
-                    <!-- The Goal -->
-                    <p>The Goal<br>
-                        <span class="gray-font">
-                        Improve the user experience of Studienwahl to enhance end-user satisfaction through better usability,
-                        structured event management, and refined filtering.</span></p>
-                    <!-- My Role -->
-                    <p>My Role<br>
-                        <span class="gray-font">
-                        As the Project Manager, I was responsible for overseeing the entire project, from planning and coordination
-                        to execution.</span></p>
-                    <!-- The Role -->
-                    <p>The Setup<br>
-                        <span class="gray-font">
-                        This project took place at the Information Agency of the Office for Youth and Vocational Guidance in Zurich and 
-                        lasted one month. I worked at 60% capacity, with the project being carried out alongside my regular daily 
-                        tasks.</span></p>
-                </div>
-            </div>
-
-         <!-- Project Phases -->
-            <div class="row">
-                <div class="col-12 highlight-text light-gray-font">                    
-                    <h3>Project Phases</h3>
-                    <p>The project was structured in three phases:</p>
-                    <ol>
-                        <li>Document the API of Studienwahl</li>
-                        <li>Make the event subpage of Studienwahl more user-friendly</li>
-                        <li>Identify and implement unknown optimization opportunities</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-
-    <div class="sticky-container">
-        <!-- Title -->
-        <div class="sticky-top dark-bg" stlye="z-index: 9999;">
-            <h2 class="py-3">PHASE ONE</h2>          
-        </div>
-        <!-- API Documentation -->
-        <div class="container py-sm-5 py-3 g-0">
-            <div class="row">
-                <div class="col-12 light-gray-font highlight-text">
-                    <h3>API Documentation</h3>
+                <!-- Content -->
+                <div class="box-txt light-gray-bg
+                            p-3 p-lg-5">        
                     <p>
-                        For this project, the Information Agency requested a detailed documentation of the 
-                        website’s API. This was necessary to understand how the import process between databases functions. 
-                        The resulting documentation provides a solid guide for similar future projects, enabling more efficient 
-                        implementation without having to start from scratch. Due to the confidential nature of some governmental data, 
-                        I will not elaborate on the first phase and will proceed directly to the second.
+                        <span class="bold-txt">The Product</span><br>
+                        Studienwahl (study choice portal) is an online platform that helps prospective 
+                        students explore and choose the right study program in Zurich or the neighboring 
+                        cantons.
+                    </p>
+                    <p>
+                        <span class="bold-txt">The Goal</span><br>
+                        Improve the user experience of Studienwahl to enhance end-user satisfaction 
+                        through better usability, structured event management, and refined filtering.
+                    </p>
+                    <p>
+                        <span class="bold-txt">My Role</span><br>
+                        As the Project Manager, I was responsible for overseeing the entire project, 
+                        from planning and coordination to execution.
+                    </p>
+                    <p>
+                        <span class="bold-txt">The Setup</span><br>
+                        This project took place at the Information Agency of the Office for Youth and 
+                        Vocational Guidance in Zurich and lasted one month. I worked at 60% capacity, 
+                        with the project being carried out alongside my regular daily tasks.
                     </p>
                 </div>
             </div>
         </div>
     </div>
+ <!-- End Overview -->
 
-
-<!-- EVENT PAGE -->
-    <div class="sticky-container">
-        <!-- Title -->
-        <div class="sticky-top dark-bg" stlye="z-index: 9999;">
-            <h2 class="py-3">PHASE TWO</h2>          
+ <!-- Phases -->
+    <div class="sticky-container pt-5">
+     <!-- Section Title -->
+        <div class="container sticky-top dark-bg
+                    py-3">
+            <h2>PHASES</h2>        
         </div>
-        <!-- Content -->
-        <div class="container py-sm-5 py-3 g-0">
-            <div class="row">
-                <div class="col-12 light-gray-font highlight-text">
-                 <!-- The Problem -->
-                    <h3>The Problem</h3>
+     <!-- Main Text -->
+        <div class="container pt-5">
+            <div class="box-txt text-white
+                        px-3 px-lg-5">
+             <!-- Project Phases -->
+                <h3>Project Phases</h3>
+                <div>
                     <p>
-                        A known problem at the agency was that the events page on Studienwahl was overflowing with listings, 
-                        making it hard for students to find what they were searching for.
-                        Institutions like ETH and UZH, which only host information events twice a year, were 
-                        buried under a flood of listings from schools like Kalaidos or ZHAW that hold sessions almost every week. 
-                        This was a problem because, statistically, most users are primarily interested in the larger institutions.</p>
-
-                 <!-- Designing a Process -->
-                    <h3>Designing a Process</h3>
-                    <p>I started by mapping out a structured process to bring order to the chaos. This involved
-                        several key steps: </p>
-                    <ul>
-                        <li>Creating a clear framework to decide which events should actually appear on the site</li>
-                        <li>Grouping recurring events into concise quarterly overviews, so the page wouldn’t get clogged with 
-                            dozens of similar posts by merging them into single entries that linked to multiple study programs, 
-                            making them easier to find and understand</li>
-                    </ul>
-                    <img src="../img/studienwahl/process-events.png" alt="Designed Process" class="pb-3 content-img">
-                    <p>To keep everything consistent, I drafted a UX writing template that set the tone and ensured each event 
-                        would give students the same kind of quick, useful snapshot.</p>
-
-                    <h3>Implementation & Results</h3>
-                    <p>Once the process was in place, I trained the team so they could maintain this clarity moving forward. 
-                        I also thought carefully about how these events should appear on the site. Instead of long lists, 
-                        I opted for a card-based UI, making it easier to scan and compare options.</p>
-
-                    <p>The impact was immediate: the events page became much more manageable, and students could find 
-                        the key information they were looking for without feeling overwhelmed.</p>
-
-                    <img src="../img/studienwahl/Events.png" alt="Studienwahl Events Page" class="pb-3 content-img">
+                        The project was structured in three phases:
+                        <ol>
+                            <li>Document the API of Studienwahl</li>
+                            <li>Make the event subpage of Studienwahl more user-friendly</li>
+                            <li>Identify and implement unknown optimization opportunities</li>
+                        </ol>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
+ <!-- End Phases -->
 
-<!-- HIDDEN PAINPOINTS-->
-    <div class="sticky-container">
-        <!-- Title -->
-        <div class="sticky-top dark-bg" stlye="z-index: 9999;">
-            <h2 class="py-3">PHASE THREE</h2>          
+
+ <!-- Phase 1 -->
+    <div class="sticky-container pt-5">
+     <!-- Section Title -->
+        <div class="container sticky-top dark-bg
+                    py-3">
+            <h2>PHASE ONE</h2>        
         </div>
-        <div class="container py-sm-5 py-3 g-0">
-            <div class="row">
-                <div class="col-12 light-gray-font highlight-text">
-                 <!-- Identifying the Problem -->
-                    <h3>Identifying the Problem</h3>
-                    <p>To identify additional friction points, I organized usability tests with representative users. They 
-                        navigated the platform while thinking aloud. This revealed critical insights:</p>
-                    <ul>
-                        <li>The homepage filter produced too many broad results, often surfacing unrelated programs</li>
-                        <li>Key features like hiding options were locked behind account creation</li>
-                        <li>The idea generator tool produced vague results, failing to guide students effectively</li>
-                    </ul>
-                    <p>Due to time restrictions, I decided to address the filtering system on the homepage, since it was 
-                        the most pressing issue. The other two points were documented for future improvements.</p>
+     <!-- Main Text -->
+        <div class="container pt-5">
+            <div class="box-txt text-white
+                        px-3 px-lg-5">
+             <!-- API Documentation-->
+                <h3>API Documentation</h3>
+                <p>
+                    For this project, the Information Agency requested a detailed documentation of the 
+                    website’s API. This was necessary to understand how the import process between 
+                    databases functions. The resulting documentation provides a solid guide for similar 
+                    future projects, enabling more efficient implementation without having to start 
+                    from scratch. Due to the confidential nature of some governmental data, I will not 
+                    elaborate on the first phase and will proceed directly to the second.
+                </p>
+            </div>   
+        </div>
+    </div>
+ <!-- End Phase 1 -->
 
-                    <h3>Improving the Filtering System</h3>
-                    <p>I first needed to understand the root cause. I discovered that all study programs were tagged with the 
-                        highest relevance level (3) for multiple subjects and interests, even if they were not the most relevant.</p>
-
-                    <p>To address this problem, I collaborated with study advisors to review and adjust relevance levels 
-                        for hundreds of programs. Finally, I built a detailed matrix to drive this reclassification, and 
-                        once approved, I implemented it in the backend. This reduced irrelevant search hits, making the 
-                        portal significantly more intuitive.</p>
-
-                    <img src="../img/studienwahl/swp-filtering.png" alt="Studienwahl Filtering Fuction" class="pb-3 content-img">
-
-                 <!-- Reflection -->
-                    <h3>Reflection</h3>
-                    <p>Through this process, I learned how critical it is to balance reducing information overload while 
-                        preserving essential data. Students can now filter more precisely, navigating Studienwahl with less 
-                        frustration and greater confidence.</p>
-                    <p>This project highlighted the power of small, data-informed UX adjustments to drive substantial improvements 
-                        in user satisfaction.</p>
+ <!-- Phase 2 -->
+    <div class="sticky-container pt-5">
+     <!-- Section Title -->
+        <div class="container sticky-top dark-bg
+                    py-3">
+            <h2>PHASE TWO</h2>        
+        </div>
+     
+        <div class="container pt-5">
+            <div class="box-txt text-white
+                        px-3 px-lg-5">
+             <!-- The Problem -->   
+                <h3>The Problem</h3>
+                <p>
+                    A known problem at the agency was that the events page on Studienwahl was overflowing 
+                    with listings, making it hard for students to find what they were searching for. 
+                    Institutions like ETH and UZH, which only host information events twice a year, 
+                    were buried under a flood of listings from schools like Kalaidos or ZHAW that hold 
+                    sessions almost every week. This was a problem because, statistically, most users 
+                    are primarily interested in the larger institutions.
+                </p>
+             <!-- Designing a Process -->
+                <h3>Designing a Process</h3> 
+                <div>
+                    <p>
+                        I started by mapping out a structured process to bring order to the chaos. This 
+                        involved several key steps:
+                        <ul>
+                            <li>Creating a clear framework to decide which events should actually appear on 
+                                the site</li>
+                            <li>Grouping recurring events into concise quarterly overviews, so the page wouldn’t 
+                                get clogged with dozens of similar posts by merging them into single entries that 
+                                linked to multiple study programs, making them easier to find and understand</li>
+                        </ul>
+                    </p>
                 </div>
+                <img src="../assets/img/studienwahl/Event Process.png"
+                class="w-100 modal-trigger"
+                alt="Detailed process explaining how to create a new event">
+                <p>
+                    To keep everything consistent, I drafted a UX writing template that set the tone and 
+                    ensured each event would give students the same kind of quick, useful snapshot.
+                </p>
+             <!-- Implementation & Results -->
+                <h3>Implementation & Results</h3>
+                <p>
+                    Once the process was in place, I trained the team so they could maintain this clarity 
+                    moving forward. I also thought carefully about how these events should appear on the site. 
+                    Instead of long lists, I opted for a card-based UI, making it easier to scan and compare 
+                    options.
+                </p>
+                <p>
+                    The impact was immediate: the events page became much more manageable, and students could 
+                    find the key information they were looking for without feeling overwhelmed.
+                </p>
+                <img src="../assets/img/studienwahl/Event Subpage.png"
+                class="w-100 modal-trigger"
+                alt="Screens of the events-subpage fo studienwahl">                
             </div>
         </div>
-    </div>      
-
-<!-- FOOTER -->
-
-<div class="light-gray-bg mt-5 pb-5 footer-image">
-    <div class="container pt-5 text-center">
-        <h3>Let's work together!</h3>
-        <p class="pt-3">
-            For any inquiries, collaborations, or just to say hello. <br> 
-            I'd love to hear from you!
-        </p>
-        <p class="pt-1">Reach out and let's connect.</p>
-        <a href="mailto:anthonyzoss97@gmail.com" class="text-decoration-none mail black-font">anthonyzoss97@gmail.com</a>
     </div>
-</div>
-<!-- IMPRESSUM -->
-    <div class="text-white pt-3 pb-3">
-        <div class="container text-center text-sm">
-            © 2025 Anthony Zoss. All rights reserved.
+ <!-- End Phase 2 -->
+
+ <!-- Phase 3 -->
+    <div class="sticky-container pt-5">
+     <!-- Section Title -->
+        <div class="container sticky-top dark-bg
+                    py-3">
+            <h2>PHASE THREE</h2>        
+        </div>
+     
+        <div class="container pt-5">
+            <div class="box-txt text-white
+                        px-3 px-lg-5">
+             <!-- Identifying the Problem-->   
+                <h3>Identifying the Problem</h3>
+                <div>
+                    <p>
+                        To identify additional friction points, I organized usability tests with representative 
+                        users. They navigated the platform while thinking aloud. This revealed critical insights:
+                        <ul>
+                            <li>The homepage filter produced too many broad results, often surfacing unrelated programs</li>
+                            <li>Key features like hiding options were locked behind account creation</li>
+                            <li>The idea generator tool produced vague results, failing to guide students effectively</li>
+                        </ul>
+                    </p>
+                </div>
+                <p>
+                    Due to time restrictions, I decided to address the filtering system on the homepage, 
+                    since it was the most pressing issue. The other two points were documented for future 
+                    improvements.
+                </p>
+             <!-- Improving the Filtering System -->
+                <h3>Improving the Filtering System</h3> 
+                <p>
+                    I first needed to understand the root cause. I discovered that all study programs were 
+                    tagged with the highest relevance level (3) for multiple subjects and interests, even 
+                    if they were not the most relevant.
+                </p>
+                <p>
+                    To address this problem, I collaborated with study advisors to review and adjust relevance 
+                    levels for hundreds of programs. Finally, I built a detailed matrix to drive this 
+                    reclassification, and once approved, I implemented it in the backend. This reduced 
+                    irrelevant search hits, making the portal significantly more intuitive.
+                </p>
+                <img src="../assets/img/studienwahl/Studienwahl Mockup.png"
+                class="w-100 modal-trigger"
+                alt="A mockup of Studienwahl's filtering system">
+             <!-- Reflection -->
+                <h3>Reflection</h3>
+                <p>
+                    Through this process, I learned how critical it is to balance reducing information overload 
+                    while preserving essential data. Students can now filter more precisely, navigating Studienwahl 
+                    with less frustration and greater confidence.
+                </p>
+                <p>
+                    This project highlighted the power of small, data-informed UX adjustments to drive substantial 
+                    improvements in user satisfaction.
+                </p>
+            </div>
         </div>
     </div>
+  <!-- End Phase 3 -->
 
-<!-- SCRIPTS -->
+ <!-- Modal -->
+    <div id="myModal" class="modal">
+        <!-- Close Button -->
+        <span class="close">&times;</span>
+        <!-- Modal Content -->
+        <img class="modal-content" id="img01">
+    </div>
+ <!-- End Modal -->
+
+ <!-- Footer -->
+    <div class="sticky-container light-gray-bg py-5 mt-5 z-3">
+        <div class="container box-txt">
+            <h2 class="align-self-center text-black">Let's work together!</h2>
+            <p class="text-center align-self-center">For any inquiries, collaborations, or just to say hello. I would love to hear from you!</p>
+            <div class="align-self-center">    
+                <a href="https://www.linkedin.com/in/anthonyzoss/" target="_blank" class="icon-circle linkedin dark-gray-bg text-white"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/AnthonyxHD?tab=repositories" target="_blank" class="icon-circle github dark-gray-bg text-white"><i class="bi bi-github"></i></a>
+                <a href="mailto:anthonyzoss97@gmail.com" class="icon-circle email dark-gray-bg text-white"><i class="bi bi-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Disclaimer -->
+    <div class="sticky-container dark-bg py-3 z-3">
+        <p class="micro-txt text-white text-center">© 2025 Anthony Zoss. All rights reserved.</p>
+    </div>
+ <!-- End Footer -->
+
+
+ <!-- SCRIPTS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/modal-img.js"></script>
+
+
+
+
+<script src="../scripts/carousel.js"></script>
+
+
 </body>
 </html>

@@ -1,0 +1,515 @@
+/* ============================== */
+/* =          Universal         = */
+/* ============================== */
+@font-face {
+    font-family: 'Nacelle';
+    src: url("../font/Nacelle-Regular.otf");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Nacelle Black';
+    src: url("../font/Nacelle-Black.otf");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Mattone 150';
+    src: url("../font/Mattone-150.woff2");
+    font-display: swap;
+}
+
+html, body {
+    font-family: 'Nacelle', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.3px;
+    line-height: 1.6;
+    background-color: #171717;
+ /* Use of Whole Viewport */
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+ /* Prevent Horizontal Scrolling */
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1140px;
+}
+.sticky-container {
+    position: relative; /* Boundary for Sticky */
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+
+/* ----- Navigation ----- */
+.navbar {
+    background-color: #05050490;
+}
+.nav-link {
+    font-size: 16px;
+    color: #d7d2d0;
+    padding: 0;
+}
+.nav-link:hover, .navling:active, .navlink:focus {
+    color: #F86D6D;
+}
+.navbar img {
+    height: 16px;
+}
+.navbar-toggler {
+  height: 16px;
+  width: 24px;
+  padding: 0 !important;
+  border: none;
+}
+.navbar-toggler-icon {
+  height: 100%;
+  width: 100%;
+  background-size: contain !important;
+  background-position: center !important;
+}
+
+@media (max-width: 768px) {
+    .nav-link {padding: 8px;}
+}
+@media (max-width: 576px) {
+    .navbar img {height: 12px;}
+    .nav-link {font-size: 12px;}
+}
+
+
+
+/* ============================== */
+/* =            Style           = */
+/* ============================== */
+
+/* ----- Colours ----- */
+.light-gray-txt {
+    color: #d7d2d0
+}
+.dark-bg {
+    background-color: #171717;
+}
+.dark-gray-bg {
+    background-color: #525251;
+}
+.light-gray-bg {
+    background-color: #d7d2d0;
+}
+.red-bg {
+    background-color: #c71610;
+}
+
+/* ----- Typography ----- */
+h1 {
+    font-family: 'Mattone 150', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 86px;
+    line-height: 1.1;
+    color: #ffffff;
+}
+h2 {
+    font-family: 'Mattone 150', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
+    color: #ffffff;
+}
+h3 {
+    font-family: 'Mattone 150', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+}
+.bold-txt {
+    font-family: 'Nacelle Black', sans-serif;
+}
+.micro-txt {
+    font-size: 16px;
+}
+.painpoint {
+    font-size: 60px;
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+}
+
+@media  (max-width: 991px) {
+    .painpoint {font-size: 48px;}
+    h2 {font-size: 32px;}
+    h3 {font-size: 24px;}   
+}
+@media (max-width: 768px) {
+    h1 {font-size: 48px;}
+}
+@media (max-width: 576px) {
+    h1 {font-size: 24px;}
+    h2 {font-size: 20px;}
+    h3 {font-size: 20px;}
+    html {font-size: 16px;}
+    body {font-size: 16px;}
+    .bold-txt {font-size: 16px;}
+    .micro-txt {font-size: 12px;}
+    .painpoint {font-size: 32px;}
+}
+
+ul, ol, li {
+    margin: 0;
+}
+
+
+/* ============================== */
+/* =         Components         = */
+/* ============================== */
+
+/* ----- Buttons ----- */
+.btn {
+    border-radius: 10px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+}
+.call-to-action {
+    border-radius: 10px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    padding: 16px 32px;
+    background-color: #05050490;
+}
+.btn:hover, .btn:active, .btn:focus,
+.btn.active, 
+.call-to-action:hover, .call-to-action:active, .call-to-action:focus {
+    background-color: #AF130E;
+    color: #ffffff;
+}
+
+/* ----- Tags ----- */
+.tag {
+    border-radius: 20px;
+    padding: 8px 16px;
+}
+
+/* ----- Text Content ----- */
+.box-txt { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+@media (max-width: 576px) {
+    .tag {font-size: 12px;}
+}
+
+/* ----- Projects Overview ----- */
+.project-box {
+    height: 500px;
+}
+@media (min-width: 991px) {
+  .box-txt .btn {margin-top: auto;}
+}
+@media (max-width: 991px) {
+    .project-box {height: auto;}
+    .box-txt {gap: 16px;}
+}
+
+
+/* ----- Gallery Overview ----- */
+.aspect-square {
+  aspect-ratio: 1 / 1;
+  width: 30%;
+  overflow: hidden;
+}
+
+
+/* ----- Contact ----- */
+.fixed-element {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.icon-circle {
+    display: inline-flex; /* center 1 */
+    justify-content: center; /* center 2 */
+    width: 32px; /* Circle size */
+    height: 32px;
+    font-size: 16px; /* Icon size */
+    border-radius: 50%;
+    transition: background-color 0.5s ease, transform 0.3s ease; /* Smooth transition to hover-color */
+    text-decoration: none;
+    margin: 0 8px;
+}
+.icon-circle i {
+    display: flex; /* center 1 */
+    align-items: center; /* center 2 */
+}
+.linkedin:hover {
+    background-color: #0077b5;
+    color: #ffffff;
+}
+.github:hover {
+    color: #ffffff;
+    background-color: black;
+}
+.email:hover {
+    background-color: #c71610;
+    color: #e4e4e4;
+}
+
+@media (max-width: 1600px) {
+    .fixed-element {position: static;}
+}
+@media (max-width: 576px) {
+    .icon-circle{
+        font-size: 12px;
+        width: 24px;
+        height: 24px;
+        margin: 0 4px}
+    .fixed-element {position: static;}
+}
+
+/* Footer */
+.footer-img {
+    position: relative; /* Ensure the content stays on top of the background */
+    background-image: url('../img/Sticker.png');
+    background-size: auto 80%; 
+    background-position: calc(50% + 375px) center; /* Center with offset */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    z-index: 99; /* Ensure the content is above the background */
+}
+
+/* ============================== */
+/* =        Illustration        = */
+/* ============================== */
+.landing-img {
+    margin-top: -1.5vw;
+}
+.landing-home {
+    width: 16%;
+}
+.landing-app {
+    width: 30%;
+}
+.landing-web {
+    width: 25%;
+}
+
+.box-img {
+    object-fit: cover;
+    display: block;
+}
+.box-img-sm {
+    height: 250px;
+}
+.box-img-lg {
+    height: 100%;
+}
+
+@media (max-width: 991px) {
+    .box-img-lg {height: 250px;}
+}
+@media (max-width: 576px) {
+    .landing-home,
+    .landing-phone {width: 50%;}
+}
+
+
+
+/* ============================== */
+/* =            Modal           = */
+/* ============================== */
+.modal-trigger {
+    cursor: pointer;
+    transition: 0.3s;
+}
+.modal-trigger:hover {opacity: 0.7;}
+
+.modal {
+    cursor: pointer;
+    display: none; /* This will be overwritten in JS to flex */
+    position: fixed;
+    z-index: 9999; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+.modal-content { /* Modal Content (Image) */
+    margin: auto;
+    max-width: 80%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
+}
+.close { /* The Close Button */
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #d7d2d0;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover, .close:focus {
+    color: #c71610;
+    text-decoration: none;
+}
+
+
+
+/* ============================== */
+/* =          Carousel          = */
+/* ============================== */
+:root{
+    --carousel-item-width: 30%;
+    --carousel-gap: 5%;
+}
+.method-gallery {
+    display:flex;
+    gap:var(--carousel-gap);
+}
+.method-gallery img{ /* ONLY 30% wide each */
+    flex:0 0 var(--carousel-item-width);
+    max-width:var(--carousel-item-width);
+    height:auto;
+    display:block;
+}
+.method-viewport { /* hide overflow so only first 3 show */
+    overflow:hidden;
+    width:100%;
+    position:relative;
+}
+.method-arrow{ /* arrows */
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:5;
+    background:rgba(0,0,0,.6);
+    color:#ffffff;
+    border:0;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+}
+.method-arrow:hover{ background:#000000; }
+.arrow-left{ left:-5%; }
+.arrow-right{ right:-5%; }
+
+@media (max-width: 576px){
+  :root{
+    --carousel-item-width: 47.5%;
+    --carousel-gap: 5%;
+  }
+}
+
+
+
+/* ============================== */
+/* =         Code Block         = */
+/* ============================== */
+.code-card{
+  width: 100%;
+  border: 1px solid #d7d2d0;
+  border-radius: 8px;
+  padding: 0px 24px;
+  overflow: auto; /* only scroll if really needed */
+}
+.code-card code{ /* Code styling */
+  display: block;
+  color: #e8eaed;
+  font-family: "Fira Code", Consolas, monospace;
+  font-size: clamp(12px,4vw,16px); /* 16 px on desktop → scales down on mobile */
+  line-height: 1.55;
+  white-space: pre; /* keep formatting */
+}
+
+
+
+/* ============================== */
+/* =        All Projects        = */
+/* ============================== */
+.all-projects-row {
+    display: flex;
+    justify-content: space-between;}
+
+.all-projects-container {
+    position: relative;
+    width: 47.5%;}
+
+
+.all-projects-img {
+    width: 100%;
+    border-radius: 1rem;
+    transition: .75s ease;}
+
+
+.middle {
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    border-radius: 1rem;
+    opacity: 0;
+    transition: .75s ease;
+    position: absolute;
+    top: 0;}
+@media (max-width: 1100px) {
+    .middle{padding:5%}
+}
+
+.all-projects-container:hover .all-projects-img {
+    opacity: 0;}
+
+
+.all-projects-container:hover .middle {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+/* ============================== */
+/* =           Gallery          = */
+/* ============================== */
+/* Add padding BETWEEN each column (if you want) */
+.row-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+  gap: 2%;
+  padding: 0;
+}
+.row-gallery,
+.row-gallery > .column-gallery {
+    padding-bottom: 1rem;
+}
+
+/* Create three equal columns that floats next to each other */
+.column-gallery {
+  width: 32%; /* 32% width, no grow/shrink */
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  display: none; /* hidden until .show-gallery is added */
+}
+
+/* Clear floats after rows */
+.row-gallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The "show" class is added to the filtered elements */
+.show-gallery {
+  display: block;
+}
+
