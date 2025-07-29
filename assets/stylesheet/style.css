@@ -315,7 +315,8 @@ ul, ol, li {
 }
 @media (max-width: 576px) {
     .landing-home,
-    .landing-phone {width: 50%;}
+    .landing-app,
+    .landing-web {width: 50%;}
 }
 
 
