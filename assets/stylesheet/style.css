@@ -51,7 +51,7 @@ p {
     color: #d7d2d0;
     padding: 0;
 }
-.nav-link:hover, .navling:active, .navlink:focus {
+.nav-link:hover, .navlink:active, .navlink:focus {
     color: #F86D6D;
 }
 .navbar img {
