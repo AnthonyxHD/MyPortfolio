@@ -16,6 +16,11 @@
     src: url("../font/Mattone-150.woff2");
     font-display: swap;
 }
+@font-face {
+    font-family: 'Liquorstore';
+    src: url("../font/Liquorstore-Regular.otf");
+    font-display: swap;
+}
 
 html, body {
     font-family: 'Nacelle', sans-serif;
@@ -147,7 +152,7 @@ h3 {
     h1 {font-size: 48px;}
 }
 @media (max-width: 576px) {
-    h1 {font-size: 24px;}
+    h1 {font-size: 40px;}
     h2 {font-size: 20px;}
     h3 {font-size: 20px;}
     html {font-size: 16px;}
@@ -180,7 +185,7 @@ ul, ol, li {
     outline: none;
     border: none;
     padding: 16px 32px;
-    background-color: #05050490;
+    background-color: #525251;
 }
 .btn:hover, .btn:active, .btn:focus,
 .btn.active, 
@@ -511,3 +516,10 @@ ul, ol, li {
   display: block;
 }
 
+
+
+.hero {
+
+    max-height: 50vh;
+
+}

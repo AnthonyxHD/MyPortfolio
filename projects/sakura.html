@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Match Psysical Screen Width -->
+    <title>Sakura Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/stylesheet/animation.css" />
+    <link rel="stylesheet" href="../assets/stylesheet/style.css" />
+</head>
+
+<body>
+ <!-- Landing Page -->
+    <div class="d-flex flex-column min-vh-100 w-100">
+     <!-- Navigation -->
+        <nav class="nav-bg navbar navbar-dark navbar-expand-md nav-bg
+                    p-3 py-sm-4 px-sm-5">
+            <div class="container-fluid">
+                <!-- Brand Logo -->
+                <a class="brand" href="../index.html"><img src="../assets/img/Brand.svg" alt="Branding of Anthony Zoss"></a>
+                <!-- Hamburger Button when Small -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Subpages -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item pe-sm-3"><a class="nav-link" href="../index.html">HOME</a></li>
+                        <li class="nav-item pe-sm-3"><a class="nav-link" href="../projects.html">PROJECTS</a></li>
+                        <li class="nav-item pe-sm-3"><a class="nav-link" href="../gallery.html">GALLERY</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+     <!-- Visuals -->
+        <div class="d-flex flex-column align-items-center justify-content-center flex-grow-1
+                    pt-5">
+            <h1 class="fly-in-left">SAKURA</h1>
+            <img    src="../assets/img/sakura/sakura_hero.png" class="hero landing-img-animation mt-5"
+            alt="Sakuras Thumbnail showing the homepage and illustrations of cherry blossoms">
+        </div>
+     <!-- Contact -->
+        <div class="fixed-element z-2
+                    pb-4 px-sm-5">
+            <div>
+                <div class="micro-txt light-gray-txt text-center pb-2">CONTACT</div>
+                <div class="d-flex justify-content-center">    
+                    <a href="https://www.linkedin.com/in/anthonyzoss/" target="_blank" class="icon-circle linkedin light-gray-bg text-black"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/AnthonyxHD?tab=repositories" target="_blank" class="icon-circle github light-gray-bg text-black"><i class="bi bi-github"></i></a>
+                    <a href="mailto:anthonyzoss97@gmail.com" class="icon-circle email light-gray-bg text-black"><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- End Landing Page-->
+
+ <!-- Overview -->
+    <div class="sticky-container pt-5">
+     <!-- Section Title -->
+         <div class="container sticky-top dark-bg
+                    py-3">
+            <h2>OVERVIEW</h2>        
+        </div>
+     <!-- Overview Text -->
+        <div class="container pt-5">
+            <div class="rounded-4 overflow-hidden">
+                <!-- Thumbnail -->
+                <div>
+                    <img src="../assets/img/sakura_thumbnail.png"
+                    class="box-img box-img-sm w-100"
+                    alt="Sakura Thumbnail">
+                </div>
+                <!-- Content -->
+                <div class="box-txt light-gray-bg
+                            p-3 p-lg-5">        
+                    <p>
+                        <span class="bold-txt">The Problem</span><br>
+                        Choosing a dish in a restaurant can be hard—especially with unfamiliar cuisines. 
+                        On top of that, the waiting time after ordering can feel long and boring.
+                    </p>
+                    <p>
+                        <span class="bold-txt">The Goal</span><br>
+                        Design a playful, modern menu for an Asian restaurant that makes choosing easier 
+                        and turns waiting time into a fun, social moment.
+                    </p>
+                    <p>
+                        <span class="bold-txt">My Role</span><br>
+                        Full-stack designer—from research and concept to interaction design and the 
+                        final prototype—working within a team of three.
+                    </p>
+                    <p>
+                        <span class="bold-txt">The Setup</span><br>
+                        This concept was created at the first Make-a-Thon in Zürich, organized by 
+                        Friends of Figma. Over the course of 4 hours we experimented with Figma Make, 
+                        explored ideas, and built a working prototype.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container pt-5">
+            <img src="../assets/img/sakura/sakura_apple_muckup_1.png"
+            class="w-100 modal-trigger"
+            alt="Muckup of Sakura App">  
+
+            <img src="../assets/img/sakura/sakura_GIF_preview.gif" 
+            alt="Sakura App beeing used inside Figma Make" 
+            style="width: 100%;"
+            class="pt-5">
+        </div>
+    </div>
+ <!-- End Overview -->
+
+ <!-- FINDING THE IDEA -->
+    <div class="sticky-container pt-5">
+     <!-- Section Title -->
+        <div class="container sticky-top dark-bg
+                    py-3">
+            <h2>FINDING THE IDEA</h2>        
+        </div>
+     <!-- Main Text -->
+        <div class="container pt-5">
+            <div class="box-txt text-white
+                        px-3 px-lg-0">
+             <!-- Brainstorming -->
+                <h3>Brainstorming</h3>
+                <p>
+                    To generate ideas quickly, we held a rapid brainstorm. In about five minutes of sketching 
+                    and discussion, we agreed to build a modern, interactive restaurant menu app. 
+                    (Shown below is our FigJam brainstorming board with key ideas.)
+                </p>
+
+                <img src="../assets/img/sakura/brainstorming_sakura.jpg"
+                class="w-100 modal-trigger"
+                alt="Brainstorming board in FigJam showing a bunch of post-its with ideas">      
+
+             <!-- Pain Points -->
+                <h3>Pain Points</h3>
+                <p>
+                    Based on common dining behavior - rather than formal research - we identified the main 
+                    user challenges. This lean approach was ideal in this fast-paced project. We skipped a 
+                    full persona in favor of ad-hoc user assumptions to save time.
+                </p>
+                <!-- Small Screens-->
+                <div class="row d-lg-none">
+                    <div class="row">
+                        <!-- Painpoint 1 -->
+                        <div class="col-2"><i class="bi bi-1-circle-fill painpoint"></i></div>
+                        <div class="col-10">
+                            <p class="mb-3">
+                                <span class="bold-txt">Decision overload:</span><br>
+                                New guests, especially those unfamiliar with the cuisine, struggle to choose confidently
+                            </p>
+                        </div>
+                        <!-- Painpoint 2 -->
+                        <div class="col-2"><i class="bi bi-2-circle-fill painpoint"></i></div>
+                        <div class="col-10">
+                            <p class="mb-3">
+                                <span class="bold-txt">Unknown waiting time:</span><br>
+                                 Guests have no sense of how long food preparation will take
+                            </p>
+                        </div>
+                        <!-- Painpoint 3 -->
+                        <div class="col-2"><i class="bi bi-3-circle-fill painpoint"></i></div>
+                        <div class="col-10">
+                            <p class="mb-3">
+                                <span class="bold-txt">Sharing is hard:</span><br>
+                                When a table wants to share, it’s tricky to align on which dish to pick
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Large Screens Layout -->
+                <div class="row d-none d-lg-flex text-center">
+                    <!-- Icons -->
+                    <div class="col-4 mb-3"><i class="bi bi-1-circle-fill painpoint"></i></div>
+                    <div class="col-4 mb-3"><i class="bi bi-2-circle-fill painpoint"></i></div>
+                    <div class="col-4 mb-3"><i class="bi bi-3-circle-fill painpoint"></i></div>
+                    <!-- Text -->
+                    <!-- Painpoint 1 -->
+                    <div class="col-4">
+                        <p>
+                            <span class="bold-txt">Decision overload:</span><br>
+                            New guests, especially those unfamiliar with the cuisine, struggle to choose confidently
+                        </p>
+                    </div>
+                    <!-- Painpoint 2 -->
+                    <div class="col-4">
+                        <p>
+                            <span class="bold-txt">Unknown waiting time:</span><br>
+                             Guests have no sense of how long food preparation will take
+                        </p>
+                    </div>
+                    <!-- Painpoint 3 -->
+                    <div class="col-4">
+                        <p>
+                            <span class="bold-txt">Sharing is hard:</span><br>
+                            When a table wants to share, it’s tricky to align on which dish to pick
+                        </p>
+                    </div>
+                </div>           
+            </div>   
+        </div>
+    </div>
+ <!-- FINDING THE IDEA -->
+
+ <!-- FINDING THE SOLUTION -->
+    <div class="sticky-container pt-5">
+     <!-- Section Title -->
+        <div class="container sticky-top dark-bg
+                    py-3">
+            <h2>FINDING THE SOLUTION</h2>        
+        </div>
+     
+        <div class="container pt-5">
+            <div class="box-txt text-white
+                        px-3 px-lg-0">
+             <!-- Solution -->   
+                <h3>Features</h3>
+                We focused on three core interactive features, prioritizing fun social elements given the time constraint:
+
+                <p>
+                    <span class="bold-txt">1) Co-op Mini Game</span><br>
+                    A collaborative game inspired by “Family Style” dining. Guests play together to complete 
+                    restaurant-themed tasks. A live leaderboard shows top tables and awards a bonus dessert 
+                    to the winners.
+                </p>
+                <p>
+                    <span class="bold-txt">2) Find my Plate (Swipe Flow)</span><br>
+                    A Tinder-like interface where each diner swipes through dishes, showing photo and short
+                    description. Swiping right adds a dish to the cart, left skips it. This quick filter 
+                    helps newcomers discover foods without reading the full menu.
+                </p>
+                <p>
+                    <span class="bold-txt">3) Shared Dishes (Table Poll)</span><br>
+                    n in-app poll lets everyone vote on dishes. Results show a ranked list of top picks that can 
+                    be added to the order in one tap. This streamlines group decision-making.
+                </p>
+
+                <h3>User Flow</h3>
+                <img src="../assets/img/sakura/userflow_sakura.jpg"
+                class="w-100 modal-trigger"
+                alt="User Flow of sakura displayed as a flow chart showing all needed screens">          
+            </div>
+        </div>
+    </div>
+ <!-- FINDING THE SOLUTION -->
+
+ <!-- REFINING THE DESIGN -->
+    <div class="sticky-container py-5">
+     <!-- Section Title -->
+        <div class="container sticky-top dark-bg
+                    py-3">
+            <h2>REFINING THE DESIGN</h2>        
+        </div>
+     <!-- Main Text -->
+        <div class="container pt-5">
+            <div class="box-txt text-white
+                        px-3 px-lg-0">
+             <!-- High Fidelity Prototype-->
+                <!-- Image 1-->
+                <img src="../assets/img/sakura/sakura_ipad_muckup_1.png"
+                class="w-100 modal-trigger"
+                alt="Homescreen of Sakura in an iPad">
+                <!-- Image 2 -->
+                 <img src="../assets/img/sakura/sakura_iphone_muckup_1.png"
+                class="w-100 modal-trigger"
+                alt="Three iPhones showing Sakura in three different screens">
+                <!-- Image 3 -->
+                 <img src="../assets/img/sakura/screens_sakura.png"
+                class="w-100 modal-trigger"
+                alt="Screens of Sakura">
+                
+                <h3>Results</h3>
+                <p>
+                    In the final 1.5 hours, we iterated on the design through promting and manual adjustments.
+                    We completed a clickable cross-platform prototype. It demonstrates all key flows: 
+                    game, swiping, polling.
+                </p>
+
+                <h3>Learnings</h3>
+                <p>
+                    Figma Make enabled us to wire logic between screens extremely fast, which is ideal for 
+                    hackathons. However, I thought that manual tweaking was needed for visual polish. I 
+                    learned that early-stage prototyping tools excel at speed, but the final UI still 
+                    requires careful attention.
+                </p>
+
+                <h3>Next Steps</h3>
+                <p>
+                    If we had more time, we would redesign the mini-game with richer graphics and adaptive 
+                    difficulty, add filtering to the “Find My Plate” feature, and expand on restaurant staff 
+                    interactions (e.g. live order status).
+                </p>
+                <p>
+                    More Features we discussed:
+                    <ul>
+                        <li>Choose spaciness level per dish</li>
+                        <li>Rating system for meals</li>
+                        <li>Lightweight staff interactions</li>
+                        <li>"Egergency Button" to call the waiter</li>
+                        <li>Choosing table</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+  <!-- End Refining the Desing -->
+
+ <!-- Modal -->
+    <div id="myModal" class="modal">
+        <!-- Close Button -->
+        <span class="close">&times;</span>
+        <!-- Modal Content -->
+        <img class="modal-content" id="img01">
+    </div>
+ <!-- End Modal -->
+
+ <!-- Footer -->
+    <div class="sticky-container light-gray-bg py-5 mt-5 z-3">
+        <div class="container box-txt">
+            <h2 class="align-self-center text-black">Let's work together!</h2>
+            <p class="text-center align-self-center">For any inquiries, collaborations, or just to say hello. I would love to hear from you!</p>
+            <div class="align-self-center">    
+                <a href="https://www.linkedin.com/in/anthonyzoss/" target="_blank" class="icon-circle linkedin dark-gray-bg text-white"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/AnthonyxHD?tab=repositories" target="_blank" class="icon-circle github dark-gray-bg text-white"><i class="bi bi-github"></i></a>
+                <a href="mailto:anthonyzoss97@gmail.com" class="icon-circle email dark-gray-bg text-white"><i class="bi bi-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Disclaimer -->
+    <div class="sticky-container dark-bg py-3 z-3">
+        <p class="micro-txt text-white text-center">© 2025 Anthony Zoss. All rights reserved.</p>
+    </div>
+ <!-- End Footer -->
+
+
+ <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/modal-img.js"></script>
+
+
+
+
+<script src="../scripts/carousel.js"></script>
+
+
+</body>
+</html>

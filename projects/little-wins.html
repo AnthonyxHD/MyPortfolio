@@ -38,8 +38,8 @@
         <div class="d-flex flex-column align-items-center justify-content-center flex-grow-1
                     pt-5">
             <h1 class="fly-in-left">LITTLE WINS</h1>
-            <img src="../assets/img/little wins/Little Wins Header.png" class="landing-app landing-img-animation"
-            alt="Screes of Little Wins floating showed in three different angles">
+            <img src="../assets/img/little wins/little_wins_hero.png" class="hero landing-img-animation mt-5"
+            alt="Little Wins Thumbnail showing the homepage and illustrations of paper airplane">
         </div>
      <!-- Contact -->
         <div class="fixed-element z-2
@@ -77,17 +77,18 @@
                             p-3 p-lg-5">        
                     <p>
                         <span class="bold-txt">The Problem</span><br>
-                        Most to-do apps are overloaded with features, which can feel overwhelming, especially 
-                        for people recovering from burnout who need a gentle way to ease back into daily tasks.
+                        Many traditional to-do apps are overloaded with features and harsh reminders, 
+                        which can overwhelm users recovering from burnout.
                     </p>
                     <p>
                         <span class="bold-txt">The Goal</span><br>
-                        Create a simple and supportive to-do app that helps users rebuild their productivity 
-                        without pressure.
+                        evelop a simple, supportive to-do app that helps users rebuild productivity 
+                        through little “wins”.
                     </p>
                     <p>
                         <span class="bold-txt">My Role</span><br>
-                        I led every aspect of this project from start to finish.
+                        UX/UI Designer (solo project) – I led the end-to-end design process, from 
+                        user research and ideation to wireframing, prototyping, and testing.
                     </p>
                     <p>
                         <span class="bold-txt">The Setup</span><br>
@@ -96,8 +97,17 @@
                     </p>
                 </div>
             </div>
-
         </div>
+        <div class="container pt-5">
+            <img src="../assets/img/little wins/little_wins_phone_muckup_1.png"
+            class="w-100 modal-trigger"
+            alt="A preview of Little Things showing four screen on four iPhones">  
+
+            <img src="../assets/img/little wins/little_wins_GIF_preview.gif" 
+            alt="Little Wins prototype beeing used inside of Figma Design" 
+            style="width: 100%;"
+            class="pt-5">
+        </div>        
     </div>
  <!-- End Overview -->
 
@@ -111,23 +121,25 @@
      <!-- Main Text -->
         <div class="container pt-5">
             <div class="box-txt text-white
-                        px-3 px-lg-5">
+                        px-3 px-lg-0">
              <!-- User Research-->
                 <h3>User Research</h3>
                 <p>
-                    I started by diving into the mindset of people who’ve experienced burnout, specifically those 
-                    who want to slowly reintroduce structure and productivity into their lives without feeling 
-                    overwhelmed. At first, I assumed they needed simpler tools, but I soon realized it was more 
-                    about feeling safe, not pressured.
+                    To create an app that truly feels safe and supportive, I first needed to understand the mindset 
+                    of someone recovering from burnout. I started by empathizing with users’ emotions and daily 
+                    struggles. At first, I assumed they simply needed a stripped-down task manager. However, research 
+                    revealed it wasn’t just about fewer features, but about removing the fear and pressure of 
+                    productivity tools.
                 </p>
-                <div>
-                    <p>To dig deeper, I:</p>
-                    <ul>
-                        <li>Held informal interviews with people who had been through burnout</li>
-                        <li>Collected key characteristics of potential users</li>
-                        <li>Mapped insights into an affinity diagram</li>
-                    </ul>
-                </div>
+                <p>
+                    To dig deeper into these needs:
+                </p>
+                <ul>
+                    <li>Held informal interviews with peers to hear their experiences</li>
+                    <li>Identified user characteristics from these conversations</li>
+                    <li>Translated key findings into an empathy map</li>
+                </ul>
+     
              <!-- Pain Points -->
                 <h3>Pain Points</h3>
                 <!-- Small Screens-->
@@ -207,8 +219,8 @@
              <!-- Persona-->
                 <h3>Persona</h3>
                 <p>
-                    Using these insights, I developed three ad hoc personas, but focused on the main persona 
-                    - Nina - for further development.
+                    I created three personas to summarize my findings, and focused on one primary 
+                    persona named Nina for development.
                 </p>
                 <img src="../assets/img/little wins/Persona Nina Keller.png"
                 class="w-100 modal-trigger"
@@ -218,12 +230,13 @@
                 <img src="../assets/img/little wins/Empathy Map Nina Keller.png"
                 class="w-100 modal-trigger"
                 alt="Empathy Map of Nina Keller shower a regular day of hers">
-                <p>
-                    To focus my design efforts, I created user stories, scenarios, storyboards and empathy 
-                    maps, leading to the definition of my Point-of-View (POV) statement.
-                </p>
+
              <!-- Problem Statement -->
                 <h3>Point-of-View (PoV) statement</h3>
+                <p>
+                    To focus my design efforts, I created user stories, scenarios and storyboards leading 
+                    to the definition of my Point-of-View (POV) statement.
+                </p>
                 <div class="container box-txt dark-gray-bg rounded-4">
                     <p class="py-4 mx-4">
                         Nina <span class="bold-txt">is</span> a Master's student on leave due to burnout,
@@ -233,9 +246,10 @@
              <!-- User Flows -->
                 <h3>User Flows</h3>
                 <p>
-                    The app should feel non-pressuring, without complicated settings or priority metrics. I 
-                    identified "create a new task” to be the main user flow, which I designed to be the 
-                    centerpiece of the app.
+                    Given Nina’s needs, I aimed for an app experience that was as streamlined and pressure-free 
+                    as possible. I outlined user stories and basic scenarios, then mapped a simple user flow 
+                    for the most critical task: creating a new to-do (“Little Win”). This flow would be the 
+                    heart of the app.
                 </p>
                 <img src="../assets/img/little wins/User Flow Little Wins.png"
                     class="w-100 modal-trigger"
@@ -255,13 +269,18 @@
      
         <div class="container pt-5">
             <div class="box-txt text-white
-                        px-3 px-lg-5">
+                        px-3 px-lg-0">
              <!-- Sketching -->   
                 <h3>Sketching</h3>
                 <p>
-                    My main challenge was breaking free from the typical feature-heavy mindset of productivity 
-                    apps. Without realizing it, I added too many features, which contradicted the needs of my 
-                    users. I began stripping away features to make the design simpler.
+                    I began the design phase with quick sketches to brainstorm the interface. My initial sketches, 
+                    admittedly, fell into a common trap: I found myself accidentally adding the very features and 
+                    metrics I had decided to avoid (old habits die hard!).
+                </p>
+                <p>
+                    I iterated through several layouts focusing on minimalism. Each subsequent sketch I removed an 
+                    element that felt like it could pressure the user. This subtractive approach ensured the 
+                    concept stayed true to being light and reassuring.
                 </p>
                  <!-- Carousel -->
                 <div class="position-relative method-carousel">
@@ -288,10 +307,11 @@
              <!-- Wireframing -->   
                 <h3>Wireframing</h3>
                 <p>
-                    For the wireframes, I focused on the main user flow - create a new task - and incorporated 
-                    an option to add a location. This was the most requested feature during my informal 
-                    interviews, as many people felt that knowing where a task needed to happen helped them 
-                    plan their days.
+                    Moving into wireframing, I translated the chosen sketch ideas into low-fidelity digital 
+                    wireframes. I focused on the main screens involved in the primary user flow. One standout 
+                    addition in the wireframes was the location field in the task creation flow. This idea came 
+                    directly from my interviews – a few people said that including a location made tasks feel 
+                    more concrete and easier to tackle. I made this field optional and simple.
                 </p>
                  <!-- Carousel -->
                 <div class="position-relative method-carousel">
@@ -316,19 +336,24 @@
                 </div>            
              <!-- Usability Test --> 
                 <h3>Usability Test</h3>
-                <div>
-                    <p>
-                        At this stage, I ran three usability tests with my wireframes to check if the process 
-                        felt intuitive and whether the initial spacing and sizing worked for my app. Through 
-                        this early testing, I uncovered two key issues:
-                        <ul>
-                            <li>The urgency metrics inspired by the Eisenhower matrix were not clear. Users 
-                                struggled to understand when to “delegate” or “delete”.</li>
-                            <li>Participants expected a more spaced-out design, craving extra breathing room 
-                                to reduce cognitive load.</li>
-                        </ul>
-                    </p>
-                </div>
+                <p>
+                    Before diving into high-fidelity design, I conducted usability tests with three users 
+                    using the wireframe prototype. My goals were to ensure the task flow felt intuitive 
+                    and to catch any element that might unintentionally create stress. This early testing 
+                    revealed two important issues:
+                </p>
+
+                <p>
+                    <span class="bold-txt">1) Confusing Task Options</span><br>
+                    I had incorporated an idea inspired by the Eisenhower Matrix. This turned out to be too 
+                    confusing and not very relevant. Test participants weren’t sure what “delegate” or “delete” 
+                    meant in context.
+                </p>
+                <p>
+                    <span class="bold-txt">2) Layout felt too dense</span><br>
+                    Users appreciated the clean look but commented that some screens felt a bit cramped.
+                </p>
+
                 <p>
                     To address the first issue, I reduced the urgency options to just “do” and “schedule” 
                     and removed the "Show More" option. Only when the corresponding urgency is selected, 
@@ -353,7 +378,7 @@
      <!-- Main Text -->
         <div class="container pt-5">
             <div class="box-txt text-white
-                        px-3 px-lg-5">
+                        px-3 px-lg-0">
              <!-- High Fidelity Prototype-->
                 <h3>High-Fidelity Prototype</h3>
                 <!-- Image 1-->
@@ -364,12 +389,10 @@
                  <img src="../assets/img/little wins/Little Wins Screens.png"
                 class="w-100 modal-trigger"
                 alt="Screens of Little Things">
-                <!-- Prototype -->
-                <div class="d-none d-md-block w-100">
-                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600"
-                    src="https://embed.figma.com/proto/5mCOfTeQBFukqFJK0kSFt3/03-UI-Design?page-id=183%3A978&node-id=372-1241&p=f&viewport=555%2C294%2C0.34&scaling=contain&content-scaling=fixed&starting-point-node-id=372%3A1241&embed-host=share"
-                    allowfullscreen></iframe>
-                </div>
+                <!-- Image 3 -->
+                 <img src="../assets/img/little wins/little_wins_prototype_screens.png"
+                class="w-100 modal-trigger"
+                alt="Home Screens of Little Wins showed in Figma">
                 <!-- Future Improvements -->
                  <h3>Future Improvements</h3>
                  <p>

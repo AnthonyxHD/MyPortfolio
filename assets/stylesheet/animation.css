@@ -48,9 +48,12 @@
 }
 
 .landing-img-animation {
-    animation: 
-        slideUp 3s ease-out,
-        floatUpDown 6s ease-in-out infinite 3s;
+    animation: slideUp 3s ease-out;
+    animation-fill-mode: forwards;
+}
+.landing-home-animation {
+    animation: slideUp 3s ease-out,
+    floatUpDown 6s ease-in-out infinite 3s;
     animation-fill-mode: forwards;
 }
 
