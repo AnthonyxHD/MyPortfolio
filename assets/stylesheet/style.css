@@ -523,3 +523,10 @@ ul, ol, li {
     max-height: 50vh;
 
 }
+
+
+
+.gif-size { width: 100%; }
+@media (min-width: 576px) {
+  .gif-size { width: 50%; }
+}
